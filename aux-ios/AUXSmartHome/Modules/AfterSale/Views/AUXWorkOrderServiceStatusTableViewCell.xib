@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUXWorkOrderServiceStatusTableViewCell" rowHeight="110" id="8yy-Yo-y9g" customClass="AUXWorkOrderServiceStatusTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8yy-Yo-y9g" id="qV8-5T-Gcv">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF5-gy-Fab">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已接单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWH-eK-tP6">
+                                <rect key="frame" x="20" y="12" width="49" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务人员:张三，已于2018-10-09 09:30，从浙江社宁波市鄞州区服务中心出发，请稍等" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skA-ma-ast">
+                                <rect key="frame" x="20" y="35.5" width="315" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.58431372549019611" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-10-09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URt-7D-N7E">
+                                <rect key="frame" x="20" y="73" width="78" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_btn_go" translatesAutoresizingMaskIntoConstraints="NO" id="gbK-i5-l86">
+                                <rect key="frame" x="345" y="44" width="22" height="22"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gbK-i5-l86" firstAttribute="centerY" secondItem="TF5-gy-Fab" secondAttribute="centerY" id="7sm-6C-IXs"/>
+                            <constraint firstItem="URt-7D-N7E" firstAttribute="top" secondItem="skA-ma-ast" secondAttribute="bottom" constant="4" id="A6r-mO-wGq"/>
+                            <constraint firstAttribute="trailing" secondItem="skA-ma-ast" secondAttribute="trailing" constant="40" id="HzR-ex-EuH"/>
+                            <constraint firstItem="sWH-eK-tP6" firstAttribute="top" secondItem="TF5-gy-Fab" secondAttribute="top" constant="12" id="ObN-Y2-9j6"/>
+                            <constraint firstItem="skA-ma-ast" firstAttribute="leading" secondItem="sWH-eK-tP6" secondAttribute="leading" id="Oc9-OL-1e6"/>
+                            <constraint firstItem="sWH-eK-tP6" firstAttribute="leading" secondItem="TF5-gy-Fab" secondAttribute="leading" constant="20" id="S1C-5D-a0k"/>
+                            <constraint firstAttribute="trailing" secondItem="gbK-i5-l86" secondAttribute="trailing" constant="8" id="YR4-X7-P5w"/>
+                            <constraint firstItem="skA-ma-ast" firstAttribute="top" secondItem="sWH-eK-tP6" secondAttribute="bottom" constant="4" id="eFI-zx-GwO"/>
+                            <constraint firstItem="URt-7D-N7E" firstAttribute="leading" secondItem="skA-ma-ast" secondAttribute="leading" id="nNI-QK-uBa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TF5-gy-Fab" secondAttribute="trailing" id="RcE-Ie-j7d"/>
+                    <constraint firstAttribute="bottom" secondItem="TF5-gy-Fab" secondAttribute="bottom" id="gyF-G6-d3s"/>
+                    <constraint firstItem="TF5-gy-Fab" firstAttribute="leading" secondItem="qV8-5T-Gcv" secondAttribute="leading" id="kZP-td-1jY"/>
+                    <constraint firstItem="TF5-gy-Fab" firstAttribute="top" secondItem="qV8-5T-Gcv" secondAttribute="top" id="rhu-rw-xOc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="createDateLabel" destination="URt-7D-N7E" id="6O9-R7-Mi0"/>
+                <outlet property="rightImageView" destination="gbK-i5-l86" id="AmH-8g-jgm"/>
+                <outlet property="statusContentlabel" destination="skA-ma-ast" id="DtG-y8-BWK"/>
+                <outlet property="statusLabel" destination="sWH-eK-tP6" id="frc-ni-Y74"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_btn_go" width="22" height="22"/>
+    </resources>
+</document>

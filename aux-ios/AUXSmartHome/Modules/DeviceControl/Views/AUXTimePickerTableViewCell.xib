@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Gf3-V4-J3a" customClass="AUXTimePickerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gf3-V4-J3a" id="VHt-AZ-hlB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="US8-It-mUV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </pickerView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uw-ou-zbf">
+                        <rect key="frame" x="157.5" y="89.5" width="5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.074509803920000006" green="0.47058823529999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="US8-It-mUV" secondAttribute="bottom" id="HJZ-Ry-IGX"/>
+                    <constraint firstItem="US8-It-mUV" firstAttribute="leading" secondItem="VHt-AZ-hlB" secondAttribute="leading" id="RQZ-jn-PmU"/>
+                    <constraint firstAttribute="trailing" secondItem="US8-It-mUV" secondAttribute="trailing" id="Rlt-yA-u2U"/>
+                    <constraint firstItem="5uw-ou-zbf" firstAttribute="centerY" secondItem="US8-It-mUV" secondAttribute="centerY" id="e4E-Dy-K6K"/>
+                    <constraint firstItem="US8-It-mUV" firstAttribute="top" secondItem="VHt-AZ-hlB" secondAttribute="top" id="rUs-OO-tNn"/>
+                    <constraint firstItem="5uw-ou-zbf" firstAttribute="centerX" secondItem="US8-It-mUV" secondAttribute="centerX" id="teC-YB-MIB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="centerTipLabel" destination="5uw-ou-zbf" id="7uB-dg-am5"/>
+                <outlet property="pickerView" destination="US8-It-mUV" id="5NZ-e4-uYB"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

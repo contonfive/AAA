@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AUXSchedulerCycleTableViewCell" rowHeight="218" id="obQ-FM-487" customClass="AUXSchedulerCycleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="obQ-FM-487" id="Nkx-Hv-Uru">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="194.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-0I-GVf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="194.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重复" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dui-X1-6XI">
+                                <rect key="frame" x="20" y="20" width="33" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e47-3p-XNJ" customClass="AUXChooseButton">
+                                <rect key="frame" x="20" y="52" width="103.5" height="29.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="每天">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="201" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdT-8J-550" customClass="AUXChooseButton">
+                                <rect key="frame" x="135.5" y="52" width="104" height="29.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="双休日">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="202" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrM-ae-mRc" customClass="AUXChooseButton">
+                                <rect key="frame" x="251.5" y="52" width="103.5" height="29.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="工作日">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iW2-ol-P9m" customClass="AUXChooseButton">
+                                <rect key="frame" x="20" y="97.5" width="103.5" height="29.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="自定义">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="自定义">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94X-KQ-sAr">
+                                <rect key="frame" x="20" y="97.5" width="335" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGr-Xa-ejz">
+                                        <rect key="frame" x="12" y="5" width="43" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHW-HU-UAa" customClass="AUXChooseButton">
+                                        <rect key="frame" x="12" y="36" width="28" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aHW-HU-UAa" secondAttribute="height" multiplier="1:1" id="yPW-CN-7L5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="一">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS9-lL-dt3" customClass="AUXChooseButton">
+                                        <rect key="frame" x="59" y="36" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oS9-lL-dt3" secondAttribute="height" multiplier="1:1" id="5ye-Ec-yQV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="二">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dap-Bp-aiT" customClass="AUXChooseButton">
+                                        <rect key="frame" x="106.5" y="36" width="28" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Dap-Bp-aiT" secondAttribute="height" multiplier="1:1" id="kis-l2-H18"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="三">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqr-2Y-XQ3" customClass="AUXChooseButton">
+                                        <rect key="frame" x="153.5" y="36" width="28" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Xqr-2Y-XQ3" secondAttribute="height" multiplier="1:1" id="SUL-Oq-li4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="四">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdg-PF-PFg" customClass="AUXChooseButton">
+                                        <rect key="frame" x="200.5" y="36" width="28" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Jdg-PF-PFg" secondAttribute="height" multiplier="1:1" id="cUR-cJ-ANd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="五">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFC-ty-Ngq" customClass="AUXChooseButton">
+                                        <rect key="frame" x="247.5" y="36" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GFC-ty-Ngq" secondAttribute="height" multiplier="1:1" id="M7T-ZJ-3cQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="六">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlN-9a-b1p" customClass="AUXChooseButton">
+                                        <rect key="frame" x="295" y="36" width="28" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VlN-9a-b1p" secondAttribute="height" multiplier="1:1" id="zoT-eL-nDO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="日">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Xqr-2Y-XQ3" firstAttribute="centerY" secondItem="Dap-Bp-aiT" secondAttribute="centerY" id="1Ff-Tx-rne"/>
+                                    <constraint firstItem="Jdg-PF-PFg" firstAttribute="centerY" secondItem="Xqr-2Y-XQ3" secondAttribute="centerY" id="BzK-6O-gee"/>
+                                    <constraint firstItem="VlN-9a-b1p" firstAttribute="width" secondItem="aHW-HU-UAa" secondAttribute="width" id="It4-kO-mbV"/>
+                                    <constraint firstAttribute="trailing" secondItem="VlN-9a-b1p" secondAttribute="trailing" constant="12" id="KRF-kK-zGs"/>
+                                    <constraint firstItem="Jdg-PF-PFg" firstAttribute="leading" secondItem="Xqr-2Y-XQ3" secondAttribute="trailing" constant="19" id="Nxp-PN-AtY"/>
+                                    <constraint firstItem="Jdg-PF-PFg" firstAttribute="width" secondItem="aHW-HU-UAa" secondAttribute="width" id="OA8-HJ-cOH"/>
+                                    <constraint firstItem="GFC-ty-Ngq" firstAttribute="width" secondItem="aHW-HU-UAa" secondAttribute="width" id="Owi-zj-Ylh"/>
+                                    <constraint firstAttribute="height" constant="72" id="S3t-u3-M8J"/>
+                                    <constraint firstItem="aHW-HU-UAa" firstAttribute="leading" secondItem="94X-KQ-sAr" secondAttribute="leading" constant="12" id="XAL-Ie-uDx"/>
+                                    <constraint firstItem="aHW-HU-UAa" firstAttribute="top" secondItem="uGr-Xa-ejz" secondAttribute="bottom" constant="14" id="XZg-iZ-FC9"/>
+                                    <constraint firstItem="uGr-Xa-ejz" firstAttribute="top" secondItem="94X-KQ-sAr" secondAttribute="top" constant="5" id="Xbf-oR-bSN"/>
+                                    <constraint firstItem="VlN-9a-b1p" firstAttribute="leading" secondItem="GFC-ty-Ngq" secondAttribute="trailing" constant="19" id="cWm-4A-ode"/>
+                                    <constraint firstItem="oS9-lL-dt3" firstAttribute="centerY" secondItem="aHW-HU-UAa" secondAttribute="centerY" id="eu0-1Q-3bM"/>
+                                    <constraint firstItem="GFC-ty-Ngq" firstAttribute="centerY" secondItem="Jdg-PF-PFg" secondAttribute="centerY" id="iv5-KU-2Hy"/>
+                                    <constraint firstItem="Xqr-2Y-XQ3" firstAttribute="leading" secondItem="Dap-Bp-aiT" secondAttribute="trailing" constant="19" id="juv-Q6-r5u"/>
+                                    <constraint firstItem="Xqr-2Y-XQ3" firstAttribute="width" secondItem="aHW-HU-UAa" secondAttribute="width" id="jyL-8l-Y8t"/>
+                                    <constraint firstItem="Dap-Bp-aiT" firstAttribute="centerY" secondItem="oS9-lL-dt3" secondAttribute="centerY" id="mFh-rk-4bh"/>
+                                    <constraint firstItem="Dap-Bp-aiT" firstAttribute="width" secondItem="aHW-HU-UAa" secondAttribute="width" id="pNK-yT-G9E"/>
+                                    <constraint firstItem="Dap-Bp-aiT" firstAttribute="leading" secondItem="oS9-lL-dt3" secondAttribute="trailing" constant="19" id="qVL-Ma-SzM"/>
+                                    <constraint firstItem="GFC-ty-Ngq" firstAttribute="leading" secondItem="Jdg-PF-PFg" secondAttribute="trailing" constant="19" id="qno-9E-eNo"/>
+                                    <constraint firstItem="VlN-9a-b1p" firstAttribute="centerY" secondItem="GFC-ty-Ngq" secondAttribute="centerY" id="vMo-Vk-LPx"/>
+                                    <constraint firstItem="uGr-Xa-ejz" firstAttribute="leading" secondItem="94X-KQ-sAr" secondAttribute="leading" constant="12" id="vs9-n5-Lxo"/>
+                                    <constraint firstItem="oS9-lL-dt3" firstAttribute="width" secondItem="aHW-HU-UAa" secondAttribute="width" id="xny-DJ-Dto"/>
+                                    <constraint firstItem="oS9-lL-dt3" firstAttribute="leading" secondItem="aHW-HU-UAa" secondAttribute="trailing" constant="19" id="yOo-XO-nI5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FrM-ae-mRc" firstAttribute="leading" secondItem="HdT-8J-550" secondAttribute="trailing" constant="12" id="1Fi-1B-9di"/>
+                            <constraint firstAttribute="trailing" secondItem="94X-KQ-sAr" secondAttribute="trailing" constant="20" id="48m-nS-EFY"/>
+                            <constraint firstItem="HdT-8J-550" firstAttribute="centerY" secondItem="e47-3p-XNJ" secondAttribute="centerY" id="AlY-2h-Kzk"/>
+                            <constraint firstItem="iW2-ol-P9m" firstAttribute="leading" secondItem="e47-3p-XNJ" secondAttribute="leading" id="BSe-MR-wXs"/>
+                            <constraint firstItem="94X-KQ-sAr" firstAttribute="leading" secondItem="Orh-0I-GVf" secondAttribute="leading" constant="20" id="BVk-oh-9UO"/>
+                            <constraint firstItem="Dui-X1-6XI" firstAttribute="leading" secondItem="Orh-0I-GVf" secondAttribute="leading" constant="20" id="DVL-vT-rla"/>
+                            <constraint firstItem="FrM-ae-mRc" firstAttribute="centerY" secondItem="HdT-8J-550" secondAttribute="centerY" id="Sjn-Qu-kT6"/>
+                            <constraint firstItem="HdT-8J-550" firstAttribute="height" secondItem="e47-3p-XNJ" secondAttribute="height" id="SvA-7b-BaH"/>
+                            <constraint firstAttribute="trailing" secondItem="FrM-ae-mRc" secondAttribute="trailing" constant="20" id="TMF-as-dko"/>
+                            <constraint firstItem="94X-KQ-sAr" firstAttribute="top" secondItem="iW2-ol-P9m" secondAttribute="top" id="VUf-K1-IIv"/>
+                            <constraint firstItem="e47-3p-XNJ" firstAttribute="top" secondItem="Dui-X1-6XI" secondAttribute="bottom" constant="12" id="cPy-5v-tPN"/>
+                            <constraint firstItem="iW2-ol-P9m" firstAttribute="width" secondItem="e47-3p-XNJ" secondAttribute="width" id="ec5-kN-z28"/>
+                            <constraint firstItem="FrM-ae-mRc" firstAttribute="width" secondItem="e47-3p-XNJ" secondAttribute="width" id="ecx-IC-FOp"/>
+                            <constraint firstItem="HdT-8J-550" firstAttribute="width" secondItem="e47-3p-XNJ" secondAttribute="width" id="ftx-2X-gGo"/>
+                            <constraint firstItem="iW2-ol-P9m" firstAttribute="height" secondItem="e47-3p-XNJ" secondAttribute="height" id="iDc-TE-ViA"/>
+                            <constraint firstItem="HdT-8J-550" firstAttribute="leading" secondItem="e47-3p-XNJ" secondAttribute="trailing" constant="12" id="kAw-p1-7tH"/>
+                            <constraint firstItem="FrM-ae-mRc" firstAttribute="height" secondItem="e47-3p-XNJ" secondAttribute="height" id="lLL-fe-xEc"/>
+                            <constraint firstItem="Dui-X1-6XI" firstAttribute="top" secondItem="Orh-0I-GVf" secondAttribute="top" constant="20" id="num-39-UNR"/>
+                            <constraint firstAttribute="bottom" secondItem="94X-KQ-sAr" secondAttribute="bottom" constant="25" id="s6h-nO-BvL"/>
+                            <constraint firstItem="e47-3p-XNJ" firstAttribute="leading" secondItem="Orh-0I-GVf" secondAttribute="leading" constant="20" id="vB3-yr-bIe"/>
+                            <constraint firstItem="iW2-ol-P9m" firstAttribute="top" secondItem="e47-3p-XNJ" secondAttribute="bottom" constant="16" id="wDk-Nt-Cds"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Orh-0I-GVf" firstAttribute="leading" secondItem="Nkx-Hv-Uru" secondAttribute="leading" id="268-ed-CcC"/>
+                    <constraint firstItem="Orh-0I-GVf" firstAttribute="top" secondItem="Nkx-Hv-Uru" secondAttribute="top" id="2Tq-xR-8jU"/>
+                    <constraint firstAttribute="trailing" secondItem="Orh-0I-GVf" secondAttribute="trailing" id="V33-Yc-HPl"/>
+                    <constraint firstAttribute="bottom" secondItem="Orh-0I-GVf" secondAttribute="bottom" id="uSY-2C-EbG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="customDayView" destination="94X-KQ-sAr" id="AjZ-wU-ifu"/>
+                <outlet property="nameLabel" destination="Dui-X1-6XI" id="dbZ-fZ-cQ7"/>
+                <outletCollection property="chooseButtonCollection" destination="aHW-HU-UAa" id="1Yw-2S-pGG"/>
+                <outletCollection property="chooseButtonCollection" destination="oS9-lL-dt3" id="eF8-DZ-1ou"/>
+                <outletCollection property="chooseButtonCollection" destination="Dap-Bp-aiT" id="AMe-os-U8F"/>
+                <outletCollection property="chooseButtonCollection" destination="Xqr-2Y-XQ3" id="Wf0-2F-Qs2"/>
+                <outletCollection property="chooseButtonCollection" destination="Jdg-PF-PFg" id="LxH-2C-J2u"/>
+                <outletCollection property="chooseButtonCollection" destination="GFC-ty-Ngq" id="naj-iy-Hfg"/>
+                <outletCollection property="chooseButtonCollection" destination="VlN-9a-b1p" id="z3t-pd-SNA"/>
+                <outletCollection property="cycleBtnsCollection" destination="e47-3p-XNJ" id="7Zy-KJ-Oqy"/>
+                <outletCollection property="cycleBtnsCollection" destination="HdT-8J-550" id="snr-Ma-1Y5"/>
+                <outletCollection property="cycleBtnsCollection" destination="FrM-ae-mRc" id="Mjd-EL-9IF"/>
+                <outletCollection property="cycleBtnsCollection" destination="iW2-ol-P9m" id="Nvp-at-4f6"/>
+            </connections>
+            <point key="canvasLocation" x="39.200000000000003" y="-10.794602698650676"/>
+        </tableViewCell>
+    </objects>
+</document>

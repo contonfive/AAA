@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HE6-DN-HAN" customClass="AUXPeakVallyFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用电量可能因为统计存在误差，数据仅供参考，不作为电费依据。 " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5g-uY-0XT">
+                    <rect key="frame" x="20" y="12" width="335" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.55686274509803924" green="0.58431372549019611" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f5g-uY-0XT" firstAttribute="centerX" secondItem="HE6-DN-HAN" secondAttribute="centerX" id="W3A-q5-jkd"/>
+                <constraint firstAttribute="trailing" secondItem="f5g-uY-0XT" secondAttribute="trailing" constant="20" id="WmU-nO-Fda"/>
+                <constraint firstItem="f5g-uY-0XT" firstAttribute="top" secondItem="HE6-DN-HAN" secondAttribute="top" constant="12" id="bYm-3M-kLg"/>
+                <constraint firstItem="f5g-uY-0XT" firstAttribute="leading" secondItem="HE6-DN-HAN" secondAttribute="leading" constant="20" id="zPy-GY-ean"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="f5g-uY-0XT" id="Qq4-oi-btH"/>
+            </connections>
+            <point key="canvasLocation" x="2" y="41"/>
+        </view>
+    </objects>
+</document>

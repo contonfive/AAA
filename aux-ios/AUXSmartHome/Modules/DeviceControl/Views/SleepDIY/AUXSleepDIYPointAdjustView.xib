@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AUXSleepDIYPointAdjustView">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_bg_slide_control1" translatesAutoresizingMaskIntoConstraints="NO" id="1ve-Q5-KeB">
+                    <rect key="frame" x="0.0" y="0.0" width="138" height="82"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28.5°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg3-vT-yXl">
+                    <rect key="frame" x="44" y="12.5" width="50.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-hr-UTW">
+                    <rect key="frame" x="21" y="11" width="22" height="22"/>
+                    <state key="normal" image="device_btn_cooling_small copy 2"/>
+                    <connections>
+                        <action selector="actionDecreaseTemperature:" destination="iN0-l3-epB" eventType="touchUpInside" id="udk-S8-lO8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWS-dg-MRH">
+                    <rect key="frame" x="95" y="11" width="22" height="22"/>
+                    <state key="normal" image="device_btn_warmingup_small"/>
+                    <connections>
+                        <action selector="actionIncreaseTemperature:" destination="iN0-l3-epB" eventType="touchUpInside" id="7Mo-1O-1vz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="低风" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3i-fw-DV2">
+                    <rect key="frame" x="52.5" y="50.5" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYC-lw-etf">
+                    <rect key="frame" x="21" y="49" width="22" height="22"/>
+                    <state key="normal" image="device_btn_cooling_small copy 2"/>
+                    <connections>
+                        <action selector="actionDecreaseWindSpeed:" destination="iN0-l3-epB" eventType="touchUpInside" id="4hI-bK-haH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm1-Cx-sJd">
+                    <rect key="frame" x="95" y="49" width="22" height="22"/>
+                    <state key="normal" image="device_btn_warmingup_small"/>
+                    <connections>
+                        <action selector="actionIncreaseWindSpeed:" destination="iN0-l3-epB" eventType="touchUpInside" id="KdQ-HB-zfp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WWS-dg-MRH" firstAttribute="centerY" secondItem="lMA-hr-UTW" secondAttribute="centerY" id="1Pu-Gy-ABb"/>
+                <constraint firstItem="lMA-hr-UTW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="1bp-uz-dbl"/>
+                <constraint firstItem="Qg3-vT-yXl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3nu-WG-MCx"/>
+                <constraint firstAttribute="bottom" secondItem="NYC-lw-etf" secondAttribute="bottom" constant="11" id="EfU-4d-qyK"/>
+                <constraint firstItem="NYC-lw-etf" firstAttribute="leading" secondItem="lMA-hr-UTW" secondAttribute="leading" id="Gqh-ky-AfN"/>
+                <constraint firstItem="lMA-hr-UTW" firstAttribute="centerY" secondItem="Qg3-vT-yXl" secondAttribute="centerY" id="QoW-j0-giI"/>
+                <constraint firstItem="p3i-fw-DV2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ytu-9V-4W7"/>
+                <constraint firstItem="p3i-fw-DV2" firstAttribute="centerY" secondItem="NYC-lw-etf" secondAttribute="centerY" id="dSC-ye-1pu"/>
+                <constraint firstAttribute="bottom" secondItem="1ve-Q5-KeB" secondAttribute="bottom" id="flT-Tr-ZqY"/>
+                <constraint firstAttribute="trailing" secondItem="WWS-dg-MRH" secondAttribute="trailing" constant="21" id="gB3-Uo-kSM"/>
+                <constraint firstItem="1ve-Q5-KeB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jfm-8e-pEj"/>
+                <constraint firstItem="gm1-Cx-sJd" firstAttribute="centerY" secondItem="NYC-lw-etf" secondAttribute="centerY" id="khG-xa-UCH"/>
+                <constraint firstAttribute="trailing" secondItem="1ve-Q5-KeB" secondAttribute="trailing" id="qHl-EF-idb"/>
+                <constraint firstItem="lMA-hr-UTW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="sVH-C6-aPr"/>
+                <constraint firstItem="gm1-Cx-sJd" firstAttribute="trailing" secondItem="WWS-dg-MRH" secondAttribute="trailing" id="uKx-jI-wWA"/>
+                <constraint firstItem="1ve-Q5-KeB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zzP-Kq-i3M"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="1ve-Q5-KeB" id="icU-UX-hSd"/>
+                <outlet property="temperatureDecreaseButton" destination="lMA-hr-UTW" id="1NB-N0-ywh"/>
+                <outlet property="temperatureIncreaseButton" destination="WWS-dg-MRH" id="6Vv-a8-lHT"/>
+                <outlet property="temperatureLabel" destination="Qg3-vT-yXl" id="qsH-1U-RYB"/>
+                <outlet property="windSpeedDecreaseButton" destination="NYC-lw-etf" id="Pjp-4y-ola"/>
+                <outlet property="windSpeedIncreaseButton" destination="gm1-Cx-sJd" id="3tq-gx-wCE"/>
+                <outlet property="windSpeedLabel" destination="p3i-fw-DV2" id="k9k-qz-Zzb"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="device_bg_slide_control1" width="136" height="84"/>
+        <image name="device_btn_cooling_small copy 2" width="22" height="22"/>
+        <image name="device_btn_warmingup_small" width="22" height="22"/>
+    </resources>
+</document>

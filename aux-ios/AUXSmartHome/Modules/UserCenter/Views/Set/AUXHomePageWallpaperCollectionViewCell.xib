@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AUXHomePageWallpaperCollectionViewCell" id="gTV-IL-0wX" customClass="AUXHomePageWallpaperCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZW-1W-qYq">
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="226"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NDd-gE-3g7">
+                                <rect key="frame" x="0.0" y="30" width="266" height="196"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_btn_selected" translatesAutoresizingMaskIntoConstraints="NO" id="1k1-J0-Prh">
+                                <rect key="frame" x="238" y="198" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="1zU-HL-1Zb"/>
+                                    <constraint firstAttribute="width" constant="22" id="c0X-F1-Hse"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NDd-gE-3g7" firstAttribute="top" secondItem="WZW-1W-qYq" secondAttribute="top" constant="30" id="84D-hz-l59"/>
+                            <constraint firstAttribute="bottom" secondItem="NDd-gE-3g7" secondAttribute="bottom" id="b7a-UX-4B5"/>
+                            <constraint firstAttribute="trailing" secondItem="NDd-gE-3g7" secondAttribute="trailing" id="kUQ-Jz-9Gj"/>
+                            <constraint firstAttribute="trailing" secondItem="1k1-J0-Prh" secondAttribute="trailing" constant="6" id="lB1-rz-APj"/>
+                            <constraint firstAttribute="bottom" secondItem="1k1-J0-Prh" secondAttribute="bottom" constant="6" id="nEC-OY-2zI"/>
+                            <constraint firstItem="NDd-gE-3g7" firstAttribute="leading" secondItem="WZW-1W-qYq" secondAttribute="leading" id="xmi-JG-o6v"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WZW-1W-qYq" secondAttribute="bottom" id="BzX-6g-7b1"/>
+                <constraint firstAttribute="trailing" secondItem="WZW-1W-qYq" secondAttribute="trailing" id="CJv-2M-yIC"/>
+                <constraint firstItem="WZW-1W-qYq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YAD-yh-EMS"/>
+                <constraint firstItem="WZW-1W-qYq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="t1Y-Ss-ipZ"/>
+            </constraints>
+            <size key="customSize" width="266" height="226"/>
+            <connections>
+                <outlet property="backGroundImageView" destination="NDd-gE-3g7" id="fqs-uq-8jV"/>
+                <outlet property="selectImageView" destination="1k1-J0-Prh" id="biX-wc-eSv"/>
+            </connections>
+            <point key="canvasLocation" x="310.39999999999998" y="71.064467766116948"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="common_btn_selected" width="22" height="22"/>
+    </resources>
+</document>

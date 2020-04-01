@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUXSceneViewListTableViewCell" id="KGk-i7-Jjw" customClass="AUXSceneViewListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVY-0J-cnb">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="126.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene_add_bg_place" translatesAutoresizingMaskIntoConstraints="NO" id="w8t-Mo-rDF">
+                                <rect key="frame" x="20" y="9" width="322" height="108.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回家" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhT-E6-1ht">
+                                <rect key="frame" x="32" y="57" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.44705882352941173" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如：到家后自动打开客厅空调" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpb-Rp-2wo">
+                                <rect key="frame" x="32" y="82" width="186" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.58431372549019611" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tpb-Rp-2wo" firstAttribute="top" secondItem="lhT-E6-1ht" secondAttribute="bottom" constant="4" id="GWW-FD-Pen"/>
+                            <constraint firstItem="lhT-E6-1ht" firstAttribute="top" secondItem="w8t-Mo-rDF" secondAttribute="top" constant="48" id="QRJ-Xv-V6K"/>
+                            <constraint firstItem="w8t-Mo-rDF" firstAttribute="leading" secondItem="QVY-0J-cnb" secondAttribute="leading" constant="20" id="Vfd-ky-P8x"/>
+                            <constraint firstItem="lhT-E6-1ht" firstAttribute="leading" secondItem="w8t-Mo-rDF" secondAttribute="leading" constant="12" id="ZTS-1Y-ghX"/>
+                            <constraint firstItem="tpb-Rp-2wo" firstAttribute="leading" secondItem="lhT-E6-1ht" secondAttribute="leading" id="fzL-O5-BN2"/>
+                            <constraint firstAttribute="trailing" secondItem="w8t-Mo-rDF" secondAttribute="trailing" constant="20" id="mFd-QV-DCM"/>
+                            <constraint firstAttribute="bottom" secondItem="w8t-Mo-rDF" secondAttribute="bottom" constant="9" id="muT-KO-zZq"/>
+                            <constraint firstItem="w8t-Mo-rDF" firstAttribute="top" secondItem="QVY-0J-cnb" secondAttribute="top" constant="9" id="nEf-E9-pSC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="QVY-0J-cnb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1gX-4B-mS9"/>
+                    <constraint firstItem="QVY-0J-cnb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SDX-Ul-dKu"/>
+                    <constraint firstAttribute="trailing" secondItem="QVY-0J-cnb" secondAttribute="trailing" id="eo2-yu-cgf"/>
+                    <constraint firstAttribute="bottom" secondItem="QVY-0J-cnb" secondAttribute="bottom" id="kmg-UN-jfU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImageView" destination="w8t-Mo-rDF" id="JHS-s8-pE0"/>
+                <outlet property="describeLabel" destination="tpb-Rp-2wo" id="PYi-ug-yYH"/>
+                <outlet property="nameLabel" destination="lhT-E6-1ht" id="oes-RI-Ure"/>
+            </connections>
+            <point key="canvasLocation" x="-25.600000000000001" y="52.623688155922046"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="scene_add_bg_place" width="364" height="110"/>
+    </resources>
+</document>

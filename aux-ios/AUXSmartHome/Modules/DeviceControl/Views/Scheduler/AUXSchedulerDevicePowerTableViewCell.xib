@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AUXSchedulerDevicePowerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsO-HO-eW9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开关状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEQ-eq-cuI">
+                                <rect key="frame" x="20" y="22.5" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdl-lB-O1u" customClass="AUXChooseButton">
+                                <rect key="frame" x="20" y="56.5" width="162" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qnG-QB-fMj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="开机">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDn-fr-bso" customClass="AUXChooseButton">
+                                <rect key="frame" x="193" y="56.5" width="162" height="30"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.41960784309999999" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xjy-Ob-8RY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="关机">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ4-Gd-xlm">
+                                <rect key="frame" x="187" y="0.0" width="1" height="108.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="nnt-9r-ti5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DEQ-eq-cuI" firstAttribute="leading" secondItem="WsO-HO-eW9" secondAttribute="leading" constant="20" id="2Wf-Yl-m58"/>
+                            <constraint firstItem="OJ4-Gd-xlm" firstAttribute="top" secondItem="WsO-HO-eW9" secondAttribute="top" id="4Wy-KH-N3I"/>
+                            <constraint firstItem="hDn-fr-bso" firstAttribute="leading" secondItem="OJ4-Gd-xlm" secondAttribute="trailing" constant="5" id="4bN-1B-zDb"/>
+                            <constraint firstAttribute="trailing" secondItem="hDn-fr-bso" secondAttribute="trailing" constant="20" id="7p0-Nc-w71"/>
+                            <constraint firstItem="DEQ-eq-cuI" firstAttribute="top" secondItem="WsO-HO-eW9" secondAttribute="top" constant="22" id="Buv-SG-rzk"/>
+                            <constraint firstAttribute="bottom" secondItem="OJ4-Gd-xlm" secondAttribute="bottom" id="EUO-Bp-oxc"/>
+                            <constraint firstItem="hDn-fr-bso" firstAttribute="centerY" secondItem="Hdl-lB-O1u" secondAttribute="centerY" id="K6m-aI-6aT"/>
+                            <constraint firstAttribute="height" constant="108" id="NXU-Ef-ikI"/>
+                            <constraint firstItem="OJ4-Gd-xlm" firstAttribute="leading" secondItem="Hdl-lB-O1u" secondAttribute="trailing" constant="5" id="VlC-3h-zJM"/>
+                            <constraint firstItem="Hdl-lB-O1u" firstAttribute="leading" secondItem="DEQ-eq-cuI" secondAttribute="leading" id="djM-2M-EHd"/>
+                            <constraint firstItem="OJ4-Gd-xlm" firstAttribute="centerX" secondItem="WsO-HO-eW9" secondAttribute="centerX" id="jhm-kU-6SX"/>
+                            <constraint firstAttribute="bottom" secondItem="Hdl-lB-O1u" secondAttribute="bottom" constant="22" id="uoA-BT-DBH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WsO-HO-eW9" secondAttribute="trailing" id="ANV-ee-kfM"/>
+                    <constraint firstAttribute="bottom" secondItem="WsO-HO-eW9" secondAttribute="bottom" id="bPS-s7-H8g"/>
+                    <constraint firstItem="WsO-HO-eW9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kdm-ry-AQ4"/>
+                    <constraint firstItem="WsO-HO-eW9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vFl-Vf-uKA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outletCollection property="chooseButtonCollection" destination="Hdl-lB-O1u" id="GWt-1k-ets"/>
+                <outletCollection property="chooseButtonCollection" destination="hDn-fr-bso" id="qLq-Jr-bPY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

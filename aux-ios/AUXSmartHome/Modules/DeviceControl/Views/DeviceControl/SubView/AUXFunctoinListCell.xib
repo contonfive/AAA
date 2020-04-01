@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AUXFunctoinListCell" id="gTV-IL-0wX" customClass="AUXFunctoinListCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6W-e6-PPl">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_btn_on" translatesAutoresizingMaskIntoConstraints="NO" id="EzR-XB-AOT">
+                                <rect key="frame" x="12" y="0.0" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EzR-XB-AOT" secondAttribute="height" multiplier="1:1" id="gzO-6v-zt5"/>
+                                    <constraint firstAttribute="width" constant="26" id="uYs-KI-pm1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_icon_list" translatesAutoresizingMaskIntoConstraints="NO" id="jFZ-EW-V9v">
+                                <rect key="frame" x="38" y="22" width="4" height="4"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模式模式模式模式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5r-rs-Rj9">
+                                <rect key="frame" x="0.0" y="32" width="50" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L5r-rs-Rj9" firstAttribute="top" secondItem="EzR-XB-AOT" secondAttribute="bottom" constant="6" id="5sm-kT-iuh"/>
+                            <constraint firstItem="jFZ-EW-V9v" firstAttribute="bottom" secondItem="EzR-XB-AOT" secondAttribute="bottom" id="7JH-YH-jQ8"/>
+                            <constraint firstItem="EzR-XB-AOT" firstAttribute="top" secondItem="b6W-e6-PPl" secondAttribute="top" id="OlY-mH-QCj"/>
+                            <constraint firstItem="L5r-rs-Rj9" firstAttribute="leading" secondItem="b6W-e6-PPl" secondAttribute="leading" id="bBb-sF-2Za"/>
+                            <constraint firstItem="jFZ-EW-V9v" firstAttribute="leading" secondItem="EzR-XB-AOT" secondAttribute="trailing" id="eA5-se-ez6"/>
+                            <constraint firstItem="EzR-XB-AOT" firstAttribute="centerX" secondItem="b6W-e6-PPl" secondAttribute="centerX" id="rDO-Od-8Wg"/>
+                            <constraint firstItem="L5r-rs-Rj9" firstAttribute="centerX" secondItem="b6W-e6-PPl" secondAttribute="centerX" id="u1G-Va-5Xj"/>
+                            <constraint firstAttribute="trailing" secondItem="L5r-rs-Rj9" secondAttribute="trailing" id="wAV-au-Pvx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b6W-e6-PPl" secondAttribute="trailing" id="L3A-XW-3ve"/>
+                <constraint firstItem="b6W-e6-PPl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RfN-NC-WAR"/>
+                <constraint firstItem="b6W-e6-PPl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oDa-5Y-3OZ"/>
+                <constraint firstAttribute="bottom" secondItem="b6W-e6-PPl" secondAttribute="bottom" id="vLM-Dv-Tk2"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="b6W-e6-PPl" id="npc-IK-vVa"/>
+                <outlet property="deviceIconListImageView" destination="jFZ-EW-V9v" id="q1Z-B2-Hdq"/>
+                <outlet property="iconImageView" destination="EzR-XB-AOT" id="o2G-UY-hkU"/>
+                <outlet property="titleLabel" destination="L5r-rs-Rj9" id="lID-bg-65o"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="46.776611694152926"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="device_btn_on" width="26" height="26"/>
+        <image name="device_icon_list" width="4" height="4"/>
+    </resources>
+</document>

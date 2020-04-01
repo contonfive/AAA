@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUXModeAndSpeedNormalTableViewCell" id="hFv-Eg-2VP" customClass="AUXModeAndSpeedNormalTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hFv-Eg-2VP" id="wOT-BV-eTQ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzl-N0-v1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMV-jo-eBr">
+                                <rect key="frame" x="168" y="12" width="39.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6Q-cO-Cle">
+                                <rect key="frame" x="22" y="42.5" width="331" height="1"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Gep-Yn-YN9"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_icon_selected_tick" translatesAutoresizingMaskIntoConstraints="NO" id="Ngn-a6-B10">
+                                <rect key="frame" x="335" y="14" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="ZN0-Fs-ltU"/>
+                                    <constraint firstAttribute="height" constant="16" id="vSP-gk-K3B"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="U6Q-cO-Cle" secondAttribute="trailing" constant="22" id="FPm-w6-D05"/>
+                            <constraint firstItem="cMV-jo-eBr" firstAttribute="centerY" secondItem="kzl-N0-v1Y" secondAttribute="centerY" id="HU3-3h-7JU"/>
+                            <constraint firstAttribute="bottom" secondItem="U6Q-cO-Cle" secondAttribute="bottom" id="I3G-k4-Qd9"/>
+                            <constraint firstAttribute="trailing" secondItem="Ngn-a6-B10" secondAttribute="trailing" constant="24" id="STz-o5-09T"/>
+                            <constraint firstItem="cMV-jo-eBr" firstAttribute="centerX" secondItem="kzl-N0-v1Y" secondAttribute="centerX" id="Uej-Dm-HDR"/>
+                            <constraint firstItem="Ngn-a6-B10" firstAttribute="centerY" secondItem="cMV-jo-eBr" secondAttribute="centerY" id="dQ4-2h-yP1"/>
+                            <constraint firstItem="U6Q-cO-Cle" firstAttribute="leading" secondItem="kzl-N0-v1Y" secondAttribute="leading" constant="22" id="ymu-HZ-AW6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kzl-N0-v1Y" firstAttribute="leading" secondItem="wOT-BV-eTQ" secondAttribute="leading" id="2pc-1t-EQz"/>
+                    <constraint firstItem="kzl-N0-v1Y" firstAttribute="top" secondItem="wOT-BV-eTQ" secondAttribute="top" id="R57-Cu-FOX"/>
+                    <constraint firstAttribute="trailing" secondItem="kzl-N0-v1Y" secondAttribute="trailing" id="ljS-JZ-YiM"/>
+                    <constraint firstAttribute="bottom" secondItem="kzl-N0-v1Y" secondAttribute="bottom" id="oIk-y2-0M9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="bottomSegmentationView" destination="U6Q-cO-Cle" id="7wV-Wk-JM2"/>
+                <outlet property="contentLabel" destination="cMV-jo-eBr" id="6GM-19-dVE"/>
+                <outlet property="iconImageView" destination="Ngn-a6-B10" id="0hA-0x-pDu"/>
+            </connections>
+            <point key="canvasLocation" x="-39.200000000000003" y="71.064467766116948"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_icon_selected_tick" width="16" height="16"/>
+    </resources>
+</document>

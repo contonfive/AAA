@@ -1,0 +1,86 @@
+//
+//  AUXPrefixHeader.pch
+//  AUXSmartHome
+//
+//  Created by AUX Group Co., Ltd on 2018/7/2.
+//  Copyright © 2018年 AUX Group Co., Ltd. All rights reserved.
+//
+
+#ifndef AUXPrefixHeader_pch
+#define AUXPrefixHeader_pch
+
+#import <AUXACNetwork/AUXACNetwork.h>
+#import "AUXDefinitions.h"
+#import "RACEXTScope.h"
+#define kAUXScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kAUXScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+#define kAUXAdvertisingHeight (kAUXScreenHeight * 0.8)
+
+//获取导航栏+状态栏的高度
+#define kAUXNavAndStatusHight  (kAUXStatusHight == 20 ? 64 : 88)
+
+#define kAUXStatusHight  ([[UIApplication sharedApplication] statusBarFrame].size.height)
+
+#define kAUXTabHeight (self.tabBarController.tabBar.frame.size.height)
+
+#define kAUXIphoneX (kAUXStatusHight != 20)
+
+#define kAUXLocalizedString(key) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
+
+//屏幕宽高
+#define kScreenWidth           [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight          [UIScreen mainScreen].bounds.size.height
+#define SCALEH                  kScreenWidth / 375.f
+#define SCALEW                  kScreenWidth / 375.f
+
+#define kAUXWindowView ([UIApplication sharedApplication].keyWindow.rootViewController.view)
+
+#define kAUXApplecation ((AppDelegate *)UIApplication.sharedApplication.delegate)
+
+/** 获取APP名称 */
+#define APP_NAME ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"])
+
+/** 程序版本号 */
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+/** 获取APP build版本 */
+#define APP_BUILD ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"])
+
+//字体
+static inline CGFloat FontSize(CGFloat fontSize){
+    if ([[UIScreen mainScreen] bounds].size.width ==320) {
+        return fontSize-2;
+    }else if ([[UIScreen mainScreen] bounds].size.width ==375){
+        return fontSize;
+    }else{
+        return fontSize+2;
+    }
+}
+
+//宏定义
+#define FONT_SIZE(size) ([UIFont systemFontOfSize:FontSize(size)])
+
+
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+#define MyDefaults               [NSUserDefaults standardUserDefaults]
+#define kPushMessageStartTime @"kPushMessageStartTime"
+#define kPushMessageEndTime @"kPushMessageEndTime"
+#define kIsTheTester @"IsTheTester"
+#define kIslisted @"kIslisted"
+#define kIsSceneEdit @"ksSceneEdit"
+#define kSelectHomepageBackImageName @"homePageimageName"
+#define kIgnorAppVersion @"IgnorAppVersion"
+#define kTabbarIndex @"tabbarIndex"
+#define kMySceneSelect @"MySceneSelect"
+#define kAUXElectronicSpecificationVersion @"electronicSpecificationVersion"
+
+#endif /* AUXPrefixHeader_pch */

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AUXDeviceShareTableViewCell" id="KGk-i7-Jjw" customClass="AUXDeviceShareTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPU-cQ-u4s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hkZ-g8-MOr">
+                                <rect key="frame" x="20" y="18" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Ck3-oz-8fM"/>
+                                    <constraint firstAttribute="height" constant="44" id="php-M4-E1C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试测试测试测试测测试测试测试测试测" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2a8-mp-gcM">
+                                <rect key="frame" x="20" y="30" width="147" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="147" id="K7B-xU-44O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_share_icon_remove" translatesAutoresizingMaskIntoConstraints="NO" id="TuB-5G-1v9">
+                                <rect key="frame" x="222" y="15" width="16" height="16"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxQ-UX-peX" customClass="AUXChooseButton">
+                                <rect key="frame" x="242" y="9.5" width="58" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="jbU-Qm-9ZJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="解除分享">
+                                    <color key="titleColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                        <color key="value" red="0.08235294118" green="0.52549019610000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsBorder" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionRelieveSharing:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fJy-YX-h1r"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTa-7x-F0W">
+                                <rect key="frame" x="267" y="40" width="33" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.58431372549019611" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_btn_go" translatesAutoresizingMaskIntoConstraints="NO" id="ktQ-fa-n9e">
+                                <rect key="frame" x="283" y="29" width="22" height="22"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2a8-mp-gcM" firstAttribute="leading" secondItem="KPU-cQ-u4s" secondAttribute="leading" constant="20" symbolic="YES" id="0ni-Hy-1V4"/>
+                            <constraint firstItem="ktQ-fa-n9e" firstAttribute="centerY" secondItem="KPU-cQ-u4s" secondAttribute="centerY" id="9VH-ZY-hZF"/>
+                            <constraint firstItem="hkZ-g8-MOr" firstAttribute="centerY" secondItem="KPU-cQ-u4s" secondAttribute="centerY" id="B6K-eK-8W0"/>
+                            <constraint firstItem="TuB-5G-1v9" firstAttribute="trailing" secondItem="CxQ-UX-peX" secondAttribute="leading" constant="-4" id="K4d-RT-ujm"/>
+                            <constraint firstItem="eTa-7x-F0W" firstAttribute="top" secondItem="KPU-cQ-u4s" secondAttribute="centerY" id="WGK-PF-hIy"/>
+                            <constraint firstAttribute="trailing" secondItem="CxQ-UX-peX" secondAttribute="trailing" constant="20" id="ay7-NW-JpS"/>
+                            <constraint firstItem="TuB-5G-1v9" firstAttribute="centerY" secondItem="CxQ-UX-peX" secondAttribute="centerY" id="bVL-It-ArB"/>
+                            <constraint firstAttribute="trailing" secondItem="eTa-7x-F0W" secondAttribute="trailing" constant="20" id="cLB-YP-kKD"/>
+                            <constraint firstItem="hkZ-g8-MOr" firstAttribute="leading" secondItem="KPU-cQ-u4s" secondAttribute="leading" constant="20" id="d30-24-PxQ"/>
+                            <constraint firstItem="2a8-mp-gcM" firstAttribute="centerY" secondItem="hkZ-g8-MOr" secondAttribute="centerY" id="gr8-w4-hW8"/>
+                            <constraint firstAttribute="trailing" secondItem="ktQ-fa-n9e" secondAttribute="trailing" constant="15" id="hZ6-Nd-eDx"/>
+                            <constraint firstItem="CxQ-UX-peX" firstAttribute="centerY" secondItem="KPU-cQ-u4s" secondAttribute="centerY" constant="-17" id="w0B-Nt-sZY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KPU-cQ-u4s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jB5-dk-l2T"/>
+                    <constraint firstItem="KPU-cQ-u4s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uaZ-by-Ef8"/>
+                    <constraint firstAttribute="bottom" secondItem="KPU-cQ-u4s" secondAttribute="bottom" id="wv7-6s-Flt"/>
+                    <constraint firstAttribute="trailing" secondItem="KPU-cQ-u4s" secondAttribute="trailing" id="z63-OA-kyW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="delectImageView" destination="TuB-5G-1v9" id="Lwd-nH-gL7"/>
+                <outlet property="iconImageView" destination="hkZ-g8-MOr" id="V1B-Ht-jvP"/>
+                <outlet property="indicatorImageView" destination="ktQ-fa-n9e" id="ObZ-GR-VFY"/>
+                <outlet property="relieveBtnCenterY" destination="w0B-Nt-sZY" id="QeM-VV-7oe"/>
+                <outlet property="relieveButton" destination="CxQ-UX-peX" id="HlS-Cw-IAz"/>
+                <outlet property="relieveIcon" destination="TuB-5G-1v9" id="i9t-Lt-jjY"/>
+                <outlet property="subtitleLabel" destination="eTa-7x-F0W" id="UdA-F9-JdJ"/>
+                <outlet property="subtitleLabelTop" destination="WGK-PF-hIy" id="Fi2-Je-bRE"/>
+                <outlet property="subtitleLabelTriling" destination="cLB-YP-kKD" id="HNc-uE-PT6"/>
+                <outlet property="titlabelCenterY" destination="gr8-w4-hW8" id="wmg-78-Hei"/>
+                <outlet property="titleLabel" destination="2a8-mp-gcM" id="xH9-pL-iFP"/>
+                <outlet property="titleLabelLeading" destination="0ni-Hy-1V4" id="yXx-pV-Whi"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_btn_go" width="22" height="22"/>
+        <image name="mine_share_icon_remove" width="16" height="16"/>
+    </resources>
+</document>

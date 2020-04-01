@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q2H-s9-bT0" customClass="AUXAfterSaleFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_service_icon_phonenum" translatesAutoresizingMaskIntoConstraints="NO" id="QWq-3b-S6Q">
+                    <rect key="frame" x="20" y="12" width="16" height="16"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="紧急服务请拨打:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usS-dh-b0X">
+                    <rect key="frame" x="40" y="11.5" width="104" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.55686274509803924" green="0.58431372549019611" blue="0.61568627450980395" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-JX-VNo">
+                    <rect key="frame" x="156" y="5.5" width="100" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="400-826-8268">
+                        <color key="titleColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="phoneButtonAtcion:" destination="q2H-s9-bT0" eventType="touchUpInside" id="yZa-ua-uWQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QWq-3b-S6Q" firstAttribute="top" secondItem="q2H-s9-bT0" secondAttribute="top" constant="12" id="3eZ-oK-xcM"/>
+                <constraint firstItem="F9w-JX-VNo" firstAttribute="leading" secondItem="usS-dh-b0X" secondAttribute="trailing" constant="12" id="I6B-y5-Lw4"/>
+                <constraint firstItem="QWq-3b-S6Q" firstAttribute="leading" secondItem="q2H-s9-bT0" secondAttribute="leading" constant="20" id="JrM-5J-1A8"/>
+                <constraint firstItem="usS-dh-b0X" firstAttribute="centerY" secondItem="QWq-3b-S6Q" secondAttribute="centerY" id="iD1-eT-CFJ"/>
+                <constraint firstItem="F9w-JX-VNo" firstAttribute="centerY" secondItem="usS-dh-b0X" secondAttribute="centerY" id="shc-lx-nZO"/>
+                <constraint firstItem="usS-dh-b0X" firstAttribute="leading" secondItem="QWq-3b-S6Q" secondAttribute="trailing" constant="4" id="yRb-8w-orh"/>
+            </constraints>
+            <connections>
+                <outlet property="phoneButton" destination="F9w-JX-VNo" id="Y7O-7Z-s7r"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="81"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_service_icon_phonenum" width="16" height="16"/>
+    </resources>
+</document>

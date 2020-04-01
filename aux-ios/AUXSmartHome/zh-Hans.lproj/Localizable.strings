@@ -1,0 +1,49 @@
+/* 
+  Localizable.string.strings
+  AUXSmartHome
+
+  Created by AUX Group Co., Ltd on 2019/2/22.
+  Copyright © 2019年 AUX Group Co., Ltd. All rights reserved.
+*/
+
+"launch_img" = "launch_img";
+"AccountCacheExpiredMessage" = "用户账号缓存已过期，请重新登录";
+"SNMeaageType" = "SN码只能设置字母和数字";
+"PleaseInputSN" = "请输入设备SN码";
+
+"AdvertisementShowFinish" = "广告显示完成";
+"AdvertisementCacheSuccess" = "广告数据缓存成功";
+"AdvertisementCacheFailure" = "广告数据缓存失败";
+
+"Loading" = "加载中...";
+
+"DeviceNotReadyPleaseWait" = "设备还没准备好，请稍候";
+
+"Sure" = "确定";
+"Cancle" = "取消";
+
+"PlaceSceneEmit" = "位置触发";
+"PlaceSceneDescribe" = "当 [进入/离开某地几公里以内/外]执行 [指定设备][动作]";
+"TimeSceneEmit" = "时间触发";
+"TimeSceneDescribe" = "当 [几时几分]\n执行 [指定设备][动作]";
+"ManualSceneEmit" = "手动执行";
+"ManualSceneDescribe" = "当[点击执行]\n执行 [指定设备][动作]";
+
+"To" = "至";
+
+//AP配网说明
+"HowToConfig" = "开启睡眠功能，按健康键8次复位。";
+"Sleep" = "睡眠";
+"Health" = "健康键";
+"GoToWIFIList" = "请进入设置 > Wi-Fi，选择aux-xxxx(其中xxxx是本模块mac后四位)。";
+"SetWifi" = "设置 > Wi-Fi";
+"AUXWifi" = "aux-xxxx";
+"FinishNext" = "完成后请返回此界面，将自动跳转到下一步。";
+
+//虚拟体验
+"VirtualAletMessage" = "虚拟体验下不可使用该功能";
+
+//设备控制
+"DeviceControlMinTem" = "已是最低温度";
+"DeviceControlMaxTem" = "已是最高温度";
+

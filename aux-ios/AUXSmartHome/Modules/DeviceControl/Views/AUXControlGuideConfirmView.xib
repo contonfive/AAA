@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AUXControlGuideConfirmView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yn-eB-8uO">
+                    <rect key="frame" x="132" y="15" width="110" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="2jE-UM-Qkq"/>
+                        <constraint firstAttribute="height" constant="25" id="LRg-nN-GW5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title=" 下次不再提醒" image="check_box_nor"/>
+                    <state key="selected" image="check_box_sel"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmh-dE-hHz" customClass="AUXButton">
+                    <rect key="frame" x="50" y="50" width="275" height="40"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.43529411759999997" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hfe-D0-5x0"/>
+                    </constraints>
+                    <state key="normal" title="知道了">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="roundRect" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                            <color key="value" red="0.08235294118" green="0.52549019610000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsButtonWhenDisabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zmh-dE-hHz" firstAttribute="top" secondItem="4yn-eB-8uO" secondAttribute="bottom" constant="10" id="2dv-i3-rFo"/>
+                <constraint firstAttribute="bottom" secondItem="Zmh-dE-hHz" secondAttribute="bottom" constant="20" id="9dc-Vz-JJw"/>
+                <constraint firstAttribute="trailing" secondItem="Zmh-dE-hHz" secondAttribute="trailing" constant="50" id="SDo-NR-Z2z"/>
+                <constraint firstItem="Zmh-dE-hHz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="rXJ-kF-7XS"/>
+                <constraint firstItem="4yn-eB-8uO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sO4-Ro-sTb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmButton" destination="Zmh-dE-hHz" id="bMh-as-qIX"/>
+                <outlet property="tipButton" destination="4yn-eB-8uO" id="Jbk-i9-tB9"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_box_nor" width="13" height="13"/>
+        <image name="check_box_sel" width="13" height="13"/>
+    </resources>
+</document>

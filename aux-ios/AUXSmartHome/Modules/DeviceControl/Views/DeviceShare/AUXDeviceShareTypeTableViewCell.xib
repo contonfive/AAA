@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUXDeviceShareTypeTableViewCell" id="KGk-i7-Jjw" customClass="AUXDeviceShareTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFu-wi-lom">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_share_icon_family" translatesAutoresizingMaskIntoConstraints="NO" id="V84-2l-kpv">
+                                <rect key="frame" x="42" y="46" width="44" height="44"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享给家人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h57-j0-WMR">
+                                <rect key="frame" x="120" y="46" width="82" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对方将获得设备永久控制权" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwH-p0-Cmm">
+                                <rect key="frame" x="120" y="73" width="171.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.58431372549019611" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bwH-p0-Cmm" firstAttribute="leading" secondItem="h57-j0-WMR" secondAttribute="leading" id="8QT-x7-3ln"/>
+                            <constraint firstItem="h57-j0-WMR" firstAttribute="top" secondItem="V84-2l-kpv" secondAttribute="top" id="G4K-6y-YeO"/>
+                            <constraint firstItem="V84-2l-kpv" firstAttribute="centerY" secondItem="nFu-wi-lom" secondAttribute="centerY" id="Inb-1b-aRl"/>
+                            <constraint firstItem="h57-j0-WMR" firstAttribute="leading" secondItem="V84-2l-kpv" secondAttribute="trailing" constant="34" id="Nt1-DW-NnA"/>
+                            <constraint firstItem="V84-2l-kpv" firstAttribute="leading" secondItem="nFu-wi-lom" secondAttribute="leading" constant="42" id="OL4-aE-Y4U"/>
+                            <constraint firstItem="bwH-p0-Cmm" firstAttribute="bottom" secondItem="V84-2l-kpv" secondAttribute="bottom" id="PXy-7z-Lak"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nFu-wi-lom" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4ZA-aF-apL"/>
+                    <constraint firstAttribute="trailing" secondItem="nFu-wi-lom" secondAttribute="trailing" id="7uP-OS-DYn"/>
+                    <constraint firstItem="nFu-wi-lom" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AdA-Yl-sWO"/>
+                    <constraint firstAttribute="bottom" secondItem="nFu-wi-lom" secondAttribute="bottom" id="isl-Fy-Sbb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="V84-2l-kpv" id="Q23-xU-ncV"/>
+                <outlet property="subtitleLabel" destination="bwH-p0-Cmm" id="Rbl-fL-oa3"/>
+                <outlet property="typeLabel" destination="h57-j0-WMR" id="jd2-Pg-Vzv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_share_icon_family" width="44" height="44"/>
+    </resources>
+</document>

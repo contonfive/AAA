@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AUXEvaluateAddIconCollectionViewCell" id="oBo-dN-cNa" customClass="AUXEvaluateAddIconCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-8p-dzc">
+                        <rect key="frame" x="0.0" y="5" width="75" height="74"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service_bg_addpic" translatesAutoresizingMaskIntoConstraints="NO" id="a74-cc-Rmj">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="74"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo8-KZ-LZR">
+                                <rect key="frame" x="15" y="45.5" width="45" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a74-cc-Rmj" firstAttribute="top" secondItem="vg0-8p-dzc" secondAttribute="top" id="9Gx-Bv-1EF"/>
+                            <constraint firstAttribute="trailing" secondItem="a74-cc-Rmj" secondAttribute="trailing" id="C7U-a7-oO1"/>
+                            <constraint firstAttribute="bottom" secondItem="a74-cc-Rmj" secondAttribute="bottom" id="LcD-vS-tmG"/>
+                            <constraint firstAttribute="bottom" secondItem="Uo8-KZ-LZR" secondAttribute="bottom" constant="15" id="Lfr-eh-lEw"/>
+                            <constraint firstItem="Uo8-KZ-LZR" firstAttribute="centerX" secondItem="vg0-8p-dzc" secondAttribute="centerX" id="X2m-ff-Wd5"/>
+                            <constraint firstItem="a74-cc-Rmj" firstAttribute="leading" secondItem="vg0-8p-dzc" secondAttribute="leading" id="qc2-Po-4cR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vg0-8p-dzc" firstAttribute="leading" secondItem="oBo-dN-cNa" secondAttribute="leading" id="4k8-QC-sRf"/>
+                <constraint firstAttribute="bottom" secondItem="vg0-8p-dzc" secondAttribute="bottom" constant="1" id="Xda-Qb-aNI"/>
+                <constraint firstAttribute="trailing" secondItem="vg0-8p-dzc" secondAttribute="trailing" constant="5" id="hMV-IH-IXw"/>
+                <constraint firstItem="vg0-8p-dzc" firstAttribute="top" secondItem="oBo-dN-cNa" secondAttribute="top" constant="5" id="jAk-aC-Ce9"/>
+            </constraints>
+            <size key="customSize" width="195" height="206"/>
+            <connections>
+                <outlet property="backView" destination="vg0-8p-dzc" id="0Vi-Ih-QUE"/>
+                <outlet property="numberLabel" destination="Uo8-KZ-LZR" id="hGX-RO-EHJ"/>
+            </connections>
+            <point key="canvasLocation" x="-113.59999999999999" y="20.689655172413794"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="service_bg_addpic" width="80" height="80"/>
+    </resources>
+</document>

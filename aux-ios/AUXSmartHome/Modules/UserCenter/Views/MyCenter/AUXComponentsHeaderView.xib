@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wbh-vf-D0z" customClass="AUXComponentsHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一 小崔的家 一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6N-Hs-KLX">
+                    <rect key="frame" x="144" y="24" width="87" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJG-Iq-MLJ">
+                    <rect key="frame" x="15" y="14" width="172.5" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="hvW-98-Be6"/>
+                    </constraints>
+                    <color key="tintColor" red="0.32549019607843138" green="0.6588235294117647" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="如何使用小组件?" image="widget_icon_finger">
+                        <color key="titleColor" red="0.1450980392" green="0.41960784309999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HJG-Iq-MLJ" firstAttribute="leading" secondItem="wbh-vf-D0z" secondAttribute="leading" constant="15" id="51A-SL-Fxv"/>
+                <constraint firstAttribute="bottom" secondItem="E6N-Hs-KLX" secondAttribute="bottom" constant="7" id="Ubk-zM-Qf1"/>
+                <constraint firstItem="HJG-Iq-MLJ" firstAttribute="top" secondItem="wbh-vf-D0z" secondAttribute="top" constant="14" id="UeP-jm-2md"/>
+                <constraint firstItem="E6N-Hs-KLX" firstAttribute="centerX" secondItem="wbh-vf-D0z" secondAttribute="centerX" id="ZOF-wo-nGk"/>
+                <constraint firstItem="HJG-Iq-MLJ" firstAttribute="trailing" secondItem="wbh-vf-D0z" secondAttribute="centerX" id="qro-Bu-XfC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="howToUseButton" destination="HJG-Iq-MLJ" id="blf-dD-G2S"/>
+                <outlet property="titlabel" destination="E6N-Hs-KLX" id="W7V-Fi-8sz"/>
+            </connections>
+            <point key="canvasLocation" x="-422.5" y="316.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="widget_icon_finger" width="18" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module AUXACNetwork {
+  umbrella header "AUXACNetwork.h"
+
+  export *
+  module * { export * }
+}

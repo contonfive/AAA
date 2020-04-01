@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AUXRemoteTimeSetTableViewCell" id="Gnu-pd-ne7" customClass="AUXRemoteTimeSetTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gnu-pd-ne7" id="bxV-Oj-3xN">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiH-xr-x4g">
+                        <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免打扰时段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6O-iR-QTV">
+                                <rect key="frame" x="12" y="13" width="76.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecF-8y-Vu1">
+                                <rect key="frame" x="246" y="7" width="95" height="30"/>
+                                <state key="normal" title="23:00--07:00">
+                                    <color key="titleColor" red="0.031372549019607843" green="0.5607843137254902" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contentAtcion:" destination="Gnu-pd-ne7" eventType="touchUpInside" id="uWN-uy-SZw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x6O-iR-QTV" firstAttribute="leading" secondItem="uiH-xr-x4g" secondAttribute="leading" constant="12" id="3C1-ZH-7gG"/>
+                            <constraint firstItem="ecF-8y-Vu1" firstAttribute="centerY" secondItem="uiH-xr-x4g" secondAttribute="centerY" id="O0T-2s-RKL"/>
+                            <constraint firstItem="x6O-iR-QTV" firstAttribute="centerY" secondItem="uiH-xr-x4g" secondAttribute="centerY" id="dhv-nz-3bd"/>
+                            <constraint firstAttribute="trailing" secondItem="ecF-8y-Vu1" secondAttribute="trailing" id="uEq-fO-ydx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uiH-xr-x4g" firstAttribute="leading" secondItem="bxV-Oj-3xN" secondAttribute="leading" id="6TD-LC-qV5"/>
+                    <constraint firstAttribute="trailing" secondItem="uiH-xr-x4g" secondAttribute="trailing" id="kez-pj-RAm"/>
+                    <constraint firstAttribute="bottom" secondItem="uiH-xr-x4g" secondAttribute="bottom" id="wY2-ao-Muu"/>
+                    <constraint firstItem="uiH-xr-x4g" firstAttribute="top" secondItem="bxV-Oj-3xN" secondAttribute="top" id="z83-mz-fRC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentButton" destination="ecF-8y-Vu1" id="6Dv-mU-bV2"/>
+                <outlet property="titleLabel" destination="x6O-iR-QTV" id="afa-5c-SiC"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="69"/>
+        </tableViewCell>
+    </objects>
+</document>

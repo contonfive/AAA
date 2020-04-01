@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUXQuestionTypeTableViewCell" rowHeight="126" id="KGk-i7-Jjw" customClass="AUXQuestionTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UL-Ei-YEN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="125.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_icon_selected_tick" translatesAutoresizingMaskIntoConstraints="NO" id="D1F-w8-WeY">
+                                <rect key="frame" x="357" y="55" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="XAr-oG-Bm5"/>
+                                    <constraint firstAttribute="width" constant="16" id="gFZ-Ih-3iX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号问题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J5-0M-dor">
+                                <rect key="frame" x="20" y="53" width="66" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZq-Zk-s0e">
+                                <rect key="frame" x="20" y="124.5" width="408" height="1"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="FfH-tq-6j7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7J5-0M-dor" firstAttribute="centerY" secondItem="9UL-Ei-YEN" secondAttribute="centerY" id="1jW-j5-os9"/>
+                            <constraint firstAttribute="trailing" secondItem="D1F-w8-WeY" secondAttribute="trailing" constant="20" id="AIC-4g-hHq"/>
+                            <constraint firstItem="NZq-Zk-s0e" firstAttribute="leading" secondItem="9UL-Ei-YEN" secondAttribute="leading" constant="20" id="be3-yB-yfP"/>
+                            <constraint firstAttribute="bottom" secondItem="NZq-Zk-s0e" secondAttribute="bottom" id="etC-lE-jV5"/>
+                            <constraint firstItem="7J5-0M-dor" firstAttribute="leading" secondItem="9UL-Ei-YEN" secondAttribute="leading" constant="20" id="hJH-YP-tcr"/>
+                            <constraint firstAttribute="trailing" secondItem="NZq-Zk-s0e" secondAttribute="trailing" constant="-35" id="m5P-rb-my9"/>
+                            <constraint firstItem="D1F-w8-WeY" firstAttribute="centerY" secondItem="9UL-Ei-YEN" secondAttribute="centerY" id="oKH-RT-UKh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9UL-Ei-YEN" secondAttribute="bottom" id="0e5-bk-yJx"/>
+                    <constraint firstItem="9UL-Ei-YEN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bFu-YY-AAN"/>
+                    <constraint firstItem="9UL-Ei-YEN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rDb-M2-aGv"/>
+                    <constraint firstAttribute="trailing" secondItem="9UL-Ei-YEN" secondAttribute="trailing" id="wU6-V8-iUk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="questionLabel" destination="7J5-0M-dor" id="Epm-oq-UjL"/>
+                <outlet property="selectImageView" destination="D1F-w8-WeY" id="CM1-Dz-AYE"/>
+            </connections>
+            <point key="canvasLocation" x="143" y="62"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_icon_selected_tick" width="16" height="16"/>
+    </resources>
+</document>

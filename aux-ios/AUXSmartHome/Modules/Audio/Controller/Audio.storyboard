@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Control View Controller-->
+        <scene sceneID="u5F-5T-kAW">
+            <objects>
+                <viewController storyboardIdentifier="AUXAudioControlViewController" automaticallyAdjustsScrollViewInsets="NO" id="i7F-8t-gC2" customClass="AUXAudioControlViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rpf-bA-kuJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3mu-gg-doG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tc2-lf-LSe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="283-I3-fjt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="379"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightAlignmentCell" id="8cr-ba-eXH" customClass="AUXChatTableViewCell">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8cr-ba-eXH" id="ls8-Ba-gCC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“打开家用空调1”" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKb-HS-Gek">
+                                                    <rect key="frame" x="229" y="10" width="136" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="textColor" red="0.20392156859999999" green="0.69803921570000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zKb-HS-Gek" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ls8-Ba-gCC" secondAttribute="leading" constant="40" id="KC8-8I-dzv"/>
+                                                <constraint firstItem="zKb-HS-Gek" firstAttribute="top" secondItem="ls8-Ba-gCC" secondAttribute="top" constant="10" id="hle-79-yUJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="zKb-HS-Gek" secondAttribute="bottom" constant="10" id="q98-jp-fu4"/>
+                                                <constraint firstAttribute="trailing" secondItem="zKb-HS-Gek" secondAttribute="trailing" constant="10" id="qiX-Gl-CvF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="zKb-HS-Gek" id="tMQ-Bs-GCH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftAlignmentCell" id="oOg-Sh-GSy" customClass="AUXChatTableViewCell">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oOg-Sh-GSy" id="N9X-Cz-5ul">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已打开家用空调1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elT-P0-7pT">
+                                                    <rect key="frame" x="10" y="10" width="137" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="elT-P0-7pT" firstAttribute="top" secondItem="N9X-Cz-5ul" secondAttribute="top" constant="10" id="2U9-5B-Ioz"/>
+                                                <constraint firstAttribute="bottom" secondItem="elT-P0-7pT" secondAttribute="bottom" constant="10" id="9wW-9e-fc8"/>
+                                                <constraint firstItem="elT-P0-7pT" firstAttribute="leading" secondItem="N9X-Cz-5ul" secondAttribute="leading" constant="10" id="fA7-uO-Moc"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="elT-P0-7pT" secondAttribute="trailing" constant="40" id="pVQ-hR-l3l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="elT-P0-7pT" id="PaG-Eq-WCi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="i7F-8t-gC2" id="H3B-Au-jbg"/>
+                                    <outlet property="delegate" destination="i7F-8t-gC2" id="vtZ-KB-M6t"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goV-Er-GTh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="423"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好，请问需要什么帮助?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsK-Xr-UG3">
+                                        <rect key="frame" x="64.5" y="60" width="246" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“打开家用空调1”" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE4-Us-GKU">
+                                        <rect key="frame" x="130.5" y="110.5" width="114" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.69803921570000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vsK-Xr-UG3" firstAttribute="top" secondItem="goV-Er-GTh" secondAttribute="top" constant="60" id="Jeq-On-ppH"/>
+                                    <constraint firstItem="yE4-Us-GKU" firstAttribute="centerX" secondItem="goV-Er-GTh" secondAttribute="centerX" id="Ojy-lo-GQq"/>
+                                    <constraint firstItem="yE4-Us-GKU" firstAttribute="top" secondItem="vsK-Xr-UG3" secondAttribute="bottom" constant="25" id="SgG-to-Kvh"/>
+                                    <constraint firstItem="vsK-Xr-UG3" firstAttribute="centerX" secondItem="goV-Er-GTh" secondAttribute="centerX" id="tVs-lC-382"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave1" translatesAutoresizingMaskIntoConstraints="NO" id="KEq-HJ-wea">
+                                <rect key="frame" x="0.0" y="443" width="375" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KEq-HJ-wea" secondAttribute="height" multiplier="375:224" id="ggo-8H-vM4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWI-WY-Hgy">
+                                <rect key="frame" x="122" y="520" width="131" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fWI-WY-Hgy" secondAttribute="height" multiplier="1:1" id="qd7-pn-sZP"/>
+                                    <constraint firstAttribute="width" constant="131" id="ysh-4K-kmJ"/>
+                                </constraints>
+                                <state key="normal" image="voice_btn_icon" backgroundImage="voice_btn_bg_nor">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="voice_btn_icon" backgroundImage="voice_btn_bg_sel"/>
+                                <state key="highlighted" image="voice_btn_icon" backgroundImage="voice_btn_bg_sel"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="核心技术由科大讯飞提供" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvp-am-Z8b">
+                                <rect key="frame" x="120" y="642.5" width="135" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kvp-am-Z8b" firstAttribute="bottom" secondItem="3mu-gg-doG" secondAttribute="top" constant="-10" id="DqE-Ya-U3t"/>
+                            <constraint firstItem="KEq-HJ-wea" firstAttribute="top" secondItem="283-I3-fjt" secondAttribute="bottom" id="Eay-Lh-nFX"/>
+                            <constraint firstItem="283-I3-fjt" firstAttribute="leading" secondItem="Tc2-lf-LSe" secondAttribute="leading" id="FJ5-Zw-six"/>
+                            <constraint firstItem="goV-Er-GTh" firstAttribute="leading" secondItem="Tc2-lf-LSe" secondAttribute="leading" id="LHN-K3-tcL"/>
+                            <constraint firstItem="kvp-am-Z8b" firstAttribute="centerX" secondItem="Tc2-lf-LSe" secondAttribute="centerX" id="VBK-9r-sTL"/>
+                            <constraint firstItem="283-I3-fjt" firstAttribute="top" secondItem="Tc2-lf-LSe" secondAttribute="top" constant="64" id="VyF-MC-PaL"/>
+                            <constraint firstItem="KEq-HJ-wea" firstAttribute="leading" secondItem="Tc2-lf-LSe" secondAttribute="leading" id="XoS-eX-zB8"/>
+                            <constraint firstItem="fWI-WY-Hgy" firstAttribute="bottom" secondItem="3mu-gg-doG" secondAttribute="top" constant="-16" id="Yt3-1N-42j"/>
+                            <constraint firstItem="KEq-HJ-wea" firstAttribute="bottom" secondItem="3mu-gg-doG" secondAttribute="top" id="hCb-C1-pV1"/>
+                            <constraint firstItem="KEq-HJ-wea" firstAttribute="top" secondItem="goV-Er-GTh" secondAttribute="bottom" id="itZ-TS-s4f"/>
+                            <constraint firstAttribute="trailing" secondItem="283-I3-fjt" secondAttribute="trailing" id="kui-hX-JhP"/>
+                            <constraint firstItem="goV-Er-GTh" firstAttribute="top" secondItem="rpf-bA-kuJ" secondAttribute="bottom" id="sg2-Dt-rcM"/>
+                            <constraint firstAttribute="trailing" secondItem="goV-Er-GTh" secondAttribute="trailing" id="wed-oG-BvJ"/>
+                            <constraint firstItem="fWI-WY-Hgy" firstAttribute="centerX" secondItem="KEq-HJ-wea" secondAttribute="centerX" id="zK3-iF-83Y"/>
+                            <constraint firstAttribute="trailing" secondItem="KEq-HJ-wea" secondAttribute="trailing" id="zfz-JY-nsU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KsX-uU-W8Z"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="animationImageView" destination="KEq-HJ-wea" id="qTh-v2-m2L"/>
+                        <outlet property="audioButton" destination="fWI-WY-Hgy" id="cI3-x0-2Fm"/>
+                        <outlet property="tableView" destination="283-I3-fjt" id="BXN-mg-WRM"/>
+                        <outlet property="tipView" destination="goV-Er-GTh" id="sLc-GX-7Ib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyb-49-2Hx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1324" y="2234"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="voice_btn_bg_nor" width="16" height="16"/>
+        <image name="voice_btn_bg_sel" width="16" height="16"/>
+        <image name="voice_btn_icon" width="31" height="40"/>
+        <image name="wave1" width="375" height="224"/>
+    </resources>
+</document>

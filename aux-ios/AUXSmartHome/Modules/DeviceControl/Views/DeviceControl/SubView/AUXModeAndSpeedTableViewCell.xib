@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUXModeAndSpeedTableViewCell" id="Wld-2U-9c8" customClass="AUXModeAndSpeedTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wld-2U-9c8" id="Aek-RX-ig0">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaL-EV-BQH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azf-g2-Yz2">
+                                <rect key="frame" x="158.5" y="0.0" width="58" height="49.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_icon_hot" translatesAutoresizingMaskIntoConstraints="NO" id="bcG-f0-qtg">
+                                        <rect key="frame" x="0.0" y="15" width="20" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="制冷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkC-mZ-rwV">
+                                        <rect key="frame" x="25" y="15" width="33" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bcG-f0-qtg" firstAttribute="leading" secondItem="azf-g2-Yz2" secondAttribute="leading" id="aMO-42-6Nl"/>
+                                    <constraint firstAttribute="width" secondItem="jkC-mZ-rwV" secondAttribute="width" constant="25" id="bAE-HB-xVC"/>
+                                    <constraint firstItem="jkC-mZ-rwV" firstAttribute="centerY" secondItem="azf-g2-Yz2" secondAttribute="centerY" id="elE-Mj-64A"/>
+                                    <constraint firstItem="bcG-f0-qtg" firstAttribute="centerY" secondItem="azf-g2-Yz2" secondAttribute="centerY" id="hqW-yO-vRJ"/>
+                                    <constraint firstItem="jkC-mZ-rwV" firstAttribute="trailing" secondItem="azf-g2-Yz2" secondAttribute="trailing" id="o6g-Ov-6LR"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0Y-0I-l7n">
+                                <rect key="frame" x="325" y="14" width="16" height="22"/>
+                                <state key="normal" image="common_icon_selected_tick"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vx4-LP-pKA">
+                                <rect key="frame" x="23" y="48.5" width="329" height="1"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="PN6-ED-fAa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="azf-g2-Yz2" firstAttribute="height" secondItem="HaL-EV-BQH" secondAttribute="height" id="2qI-aP-pgu"/>
+                            <constraint firstAttribute="bottom" secondItem="vx4-LP-pKA" secondAttribute="bottom" id="6id-NF-GaX"/>
+                            <constraint firstItem="a0Y-0I-l7n" firstAttribute="centerY" secondItem="HaL-EV-BQH" secondAttribute="centerY" id="EPz-j2-mFC"/>
+                            <constraint firstItem="azf-g2-Yz2" firstAttribute="centerY" secondItem="HaL-EV-BQH" secondAttribute="centerY" id="FNE-Xp-MBo"/>
+                            <constraint firstItem="vx4-LP-pKA" firstAttribute="leading" secondItem="HaL-EV-BQH" secondAttribute="leading" constant="23" id="Nlh-6h-qbS"/>
+                            <constraint firstAttribute="trailing" secondItem="a0Y-0I-l7n" secondAttribute="trailing" constant="34" id="Vpr-bt-85L"/>
+                            <constraint firstAttribute="trailing" secondItem="vx4-LP-pKA" secondAttribute="trailing" constant="23" id="iLk-VD-Rvx"/>
+                            <constraint firstItem="azf-g2-Yz2" firstAttribute="centerX" secondItem="HaL-EV-BQH" secondAttribute="centerX" id="jbw-NQ-vh0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="HaL-EV-BQH" secondAttribute="bottom" id="IgB-YX-yl4"/>
+                    <constraint firstItem="HaL-EV-BQH" firstAttribute="top" secondItem="Aek-RX-ig0" secondAttribute="top" id="Xmu-6g-tdk"/>
+                    <constraint firstAttribute="trailing" secondItem="HaL-EV-BQH" secondAttribute="trailing" id="hYX-mI-B5a"/>
+                    <constraint firstItem="HaL-EV-BQH" firstAttribute="leading" secondItem="Aek-RX-ig0" secondAttribute="leading" id="tlM-9h-XSx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomSegmentationView" destination="vx4-LP-pKA" id="jRh-1d-y2i"/>
+                <outlet property="selectedBtn" destination="a0Y-0I-l7n" id="vte-RZ-4yQ"/>
+                <outlet property="statusImageView" destination="bcG-f0-qtg" id="UYy-vq-ZZN"/>
+                <outlet property="statusLabel" destination="jkC-mZ-rwV" id="HU2-dU-kNX"/>
+                <outlet property="statusLabelTriling" destination="o6g-Ov-6LR" id="bfR-Ix-Etk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_icon_selected_tick" width="16" height="16"/>
+        <image name="device_icon_hot" width="20" height="20"/>
+    </resources>
+</document>

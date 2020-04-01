@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AUXSchedulerTemperatureTableViewCell" rowHeight="90" id="aft-qi-73b" customClass="AUXSchedulerTemperatureTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aft-qi-73b" id="ZtO-hz-buK">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4m-Wf-RxO">
+                        <rect key="frame" x="20" y="15.5" width="33" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLc-cU-66R">
+                        <rect key="frame" x="40" y="37.5" width="295" height="35"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="G2R-o2-fdL">
+                                <rect key="frame" x="3" y="2.5" width="289" height="31"/>
+                                <color key="tintColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="actionTemperatureSliderValueChanged:" destination="aft-qi-73b" eventType="valueChanged" id="0gb-Wg-pA4"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="G2R-o2-fdL" secondAttribute="trailing" constant="5" id="SLs-Oq-y6B"/>
+                            <constraint firstAttribute="height" constant="35" id="SmX-c8-rKc"/>
+                            <constraint firstItem="G2R-o2-fdL" firstAttribute="leading" secondItem="LLc-cU-66R" secondAttribute="leading" constant="5" id="Udl-Kc-zAK"/>
+                            <constraint firstItem="G2R-o2-fdL" firstAttribute="centerY" secondItem="LLc-cU-66R" secondAttribute="centerY" id="mgg-Y9-f8k"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZO-Oh-oti">
+                        <rect key="frame" x="168" y="19" width="39.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUg-bO-O8y">
+                        <rect key="frame" x="17.5" y="45" width="17.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi2-XG-6y7">
+                        <rect key="frame" x="340" y="45" width="19.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IZO-Oh-oti" firstAttribute="centerX" secondItem="ZtO-hz-buK" secondAttribute="centerX" id="834-rw-d64"/>
+                    <constraint firstItem="xi2-XG-6y7" firstAttribute="leading" secondItem="LLc-cU-66R" secondAttribute="trailing" constant="5" id="96n-i1-yeI"/>
+                    <constraint firstItem="EUg-bO-O8y" firstAttribute="centerY" secondItem="LLc-cU-66R" secondAttribute="centerY" id="Ij4-TM-WsB"/>
+                    <constraint firstItem="i4m-Wf-RxO" firstAttribute="centerY" secondItem="ZtO-hz-buK" secondAttribute="top" constant="25" id="Lyc-fu-19M"/>
+                    <constraint firstAttribute="trailing" secondItem="LLc-cU-66R" secondAttribute="trailing" constant="40" id="MiG-bp-oXJ"/>
+                    <constraint firstItem="i4m-Wf-RxO" firstAttribute="leading" secondItem="ZtO-hz-buK" secondAttribute="leading" constant="20" id="VNR-03-9at"/>
+                    <constraint firstItem="LLc-cU-66R" firstAttribute="top" secondItem="IZO-Oh-oti" secondAttribute="bottom" constant="-2.5" id="bPI-Oi-NHE"/>
+                    <constraint firstItem="LLc-cU-66R" firstAttribute="leading" secondItem="EUg-bO-O8y" secondAttribute="trailing" constant="5" id="bZm-ug-hQD"/>
+                    <constraint firstItem="LLc-cU-66R" firstAttribute="leading" secondItem="ZtO-hz-buK" secondAttribute="leading" constant="40" id="dg1-Ym-lTZ"/>
+                    <constraint firstItem="LLc-cU-66R" firstAttribute="centerY" secondItem="ZtO-hz-buK" secondAttribute="centerY" constant="10" id="h8f-qu-rRv"/>
+                    <constraint firstItem="xi2-XG-6y7" firstAttribute="centerY" secondItem="LLc-cU-66R" secondAttribute="centerY" id="sBX-cZ-QO9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="maxLabel" destination="xi2-XG-6y7" id="twT-EQ-jEu"/>
+                <outlet property="minLabel" destination="EUg-bO-O8y" id="jX4-m3-cwH"/>
+                <outlet property="slider" destination="G2R-o2-fdL" id="7K5-Kq-ItS"/>
+                <outlet property="sliderContentView" destination="LLc-cU-66R" id="Unt-nT-SIT"/>
+                <outlet property="temperatureLabel" destination="IZO-Oh-oti" id="NCv-1s-vvA"/>
+                <outlet property="titleLabel" destination="i4m-Wf-RxO" id="JTA-Zn-tko"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

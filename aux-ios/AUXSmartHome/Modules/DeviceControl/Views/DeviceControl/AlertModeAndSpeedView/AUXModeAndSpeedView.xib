@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AUXModeAndSpeedView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6V-Lz-9aF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6i-EJ-YT1">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="b77-9Y-PsA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNo-YE-WAM">
+                    <rect key="frame" x="0.0" y="417" width="375" height="250"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dqE-XF-oCk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="hdt-SD-zMa"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="eWU-3q-GJy"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dqE-XF-oCk" firstAttribute="top" secondItem="LNo-YE-WAM" secondAttribute="top" id="1UL-Ny-hdc"/>
+                        <constraint firstAttribute="height" constant="250" id="Nm6-fO-gyi"/>
+                        <constraint firstAttribute="bottom" secondItem="dqE-XF-oCk" secondAttribute="bottom" id="ZXD-pm-0PI"/>
+                        <constraint firstItem="dqE-XF-oCk" firstAttribute="leading" secondItem="LNo-YE-WAM" secondAttribute="leading" id="dL6-zs-6dv"/>
+                        <constraint firstAttribute="trailing" secondItem="dqE-XF-oCk" secondAttribute="trailing" id="kEs-Ip-d1x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O6V-Lz-9aF" secondAttribute="bottom" id="Jrc-aF-PEj"/>
+                <constraint firstAttribute="bottom" secondItem="H6i-EJ-YT1" secondAttribute="bottom" id="SA8-vJ-6HM"/>
+                <constraint firstItem="O6V-Lz-9aF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UWh-Qn-WfA"/>
+                <constraint firstAttribute="bottom" secondItem="LNo-YE-WAM" secondAttribute="bottom" id="VU2-lD-iVg"/>
+                <constraint firstAttribute="trailing" secondItem="LNo-YE-WAM" secondAttribute="trailing" id="XTw-0e-4xq"/>
+                <constraint firstItem="H6i-EJ-YT1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YCV-Fj-QnD"/>
+                <constraint firstItem="O6V-Lz-9aF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aXj-Kc-TJn"/>
+                <constraint firstAttribute="trailing" secondItem="O6V-Lz-9aF" secondAttribute="trailing" id="pX1-9K-lH9"/>
+                <constraint firstAttribute="trailing" secondItem="H6i-EJ-YT1" secondAttribute="trailing" id="rL3-7W-WAR"/>
+                <constraint firstItem="LNo-YE-WAM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xQb-Zo-1lp"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="O6V-Lz-9aF" id="jBv-1C-Db3"/>
+                <outlet property="tableBackView" destination="LNo-YE-WAM" id="GTs-Df-GVS"/>
+                <outlet property="tableBackViewHeight" destination="Nm6-fO-gyi" id="S8N-gd-GEV"/>
+                <outlet property="tableView" destination="dqE-XF-oCk" id="8WQ-cq-hPC"/>
+            </connections>
+        </view>
+    </objects>
+</document>

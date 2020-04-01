@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AUXSchedulerDeviceWindTableViewCell" rowHeight="90" id="kSX-hA-gMk" customClass="AUXSchedulerDeviceWindTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSX-hA-gMk" id="ArA-HR-tgL">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风速" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOz-qA-rim">
+                        <rect key="frame" x="20" y="15.5" width="33" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xK7-pt-Fat">
+                        <rect key="frame" x="20" y="45" width="335" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="z2f-Su-6bZ"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6OG-x9-613">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="kSX-hA-gMk" id="DL6-tc-umM"/>
+                            <outlet property="delegate" destination="kSX-hA-gMk" id="hVr-0c-uBh"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xK7-pt-Fat" firstAttribute="leading" secondItem="ArA-HR-tgL" secondAttribute="leading" constant="20" id="blS-Ma-2hH"/>
+                    <constraint firstItem="NOz-qA-rim" firstAttribute="leading" secondItem="ArA-HR-tgL" secondAttribute="leading" constant="20" id="buG-E5-i19"/>
+                    <constraint firstAttribute="trailing" secondItem="xK7-pt-Fat" secondAttribute="trailing" constant="20" id="gGq-qc-2Xv"/>
+                    <constraint firstItem="xK7-pt-Fat" firstAttribute="top" secondItem="NOz-qA-rim" secondAttribute="bottom" constant="10" id="oy9-9m-7TX"/>
+                    <constraint firstItem="NOz-qA-rim" firstAttribute="centerY" secondItem="ArA-HR-tgL" secondAttribute="top" constant="25" id="zLd-no-cuG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="collectionView" destination="xK7-pt-Fat" id="xE7-up-e6v"/>
+                <outlet property="titleLabel" destination="NOz-qA-rim" id="iRw-kB-kxY"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="148.42578710644679"/>
+        </tableViewCell>
+    </objects>
+</document>

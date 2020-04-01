@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="AUXSubtitleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugh-Pi-rcj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal_center_phone" translatesAutoresizingMaskIntoConstraints="NO" id="urk-3E-RL9">
+                                <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="urk-3E-RL9" secondAttribute="height" multiplier="1:1" id="F8B-3U-rLe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间时间时间时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAo-sV-7j2">
+                                <rect key="frame" x="20" y="12" width="131" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="131" id="tbs-Gh-BNv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:00-09:00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2e-PB-rc2">
+                                <rect key="frame" x="188" y="12" width="94" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.58431372549019611" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_btn_go" translatesAutoresizingMaskIntoConstraints="NO" id="QcE-bW-Biz">
+                                <rect key="frame" x="283" y="11" width="22" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EAo-sV-7j2" firstAttribute="centerY" secondItem="Ugh-Pi-rcj" secondAttribute="centerY" id="F95-AU-Ba1"/>
+                            <constraint firstAttribute="trailing" secondItem="T2e-PB-rc2" secondAttribute="trailing" constant="38" id="Gji-bn-M6G"/>
+                            <constraint firstItem="EAo-sV-7j2" firstAttribute="leading" secondItem="Ugh-Pi-rcj" secondAttribute="leading" constant="20" id="JuX-g4-aj3"/>
+                            <constraint firstItem="urk-3E-RL9" firstAttribute="centerY" secondItem="Ugh-Pi-rcj" secondAttribute="centerY" id="Tga-gz-HvM"/>
+                            <constraint firstItem="urk-3E-RL9" firstAttribute="leading" secondItem="Ugh-Pi-rcj" secondAttribute="leading" constant="20" id="dBL-WK-BdU"/>
+                            <constraint firstItem="T2e-PB-rc2" firstAttribute="centerY" secondItem="Ugh-Pi-rcj" secondAttribute="centerY" id="p2E-ZU-9XU"/>
+                            <constraint firstItem="T2e-PB-rc2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EAo-sV-7j2" secondAttribute="trailing" id="rZx-5f-fXu"/>
+                            <constraint firstItem="QcE-bW-Biz" firstAttribute="centerY" secondItem="Ugh-Pi-rcj" secondAttribute="centerY" id="vwR-fG-aG2"/>
+                            <constraint firstAttribute="trailing" secondItem="QcE-bW-Biz" secondAttribute="trailing" constant="15" id="y48-ej-1t7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ugh-Pi-rcj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OKf-rw-92t"/>
+                    <constraint firstAttribute="bottom" secondItem="Ugh-Pi-rcj" secondAttribute="bottom" id="aaf-8F-e3v"/>
+                    <constraint firstItem="Ugh-Pi-rcj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dZc-32-iAZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ugh-Pi-rcj" secondAttribute="trailing" id="i2x-Sg-U6R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="urk-3E-RL9" id="6hV-RJ-2kq"/>
+                <outlet property="indicatorImageView" destination="QcE-bW-Biz" id="TYH-R0-DpW"/>
+                <outlet property="subtitleLabel" destination="T2e-PB-rc2" id="XhL-p8-GKR"/>
+                <outlet property="subtitleLabelTrailing" destination="Gji-bn-M6G" id="iHR-Wk-Q6t"/>
+                <outlet property="titleLabel" destination="EAo-sV-7j2" id="6AK-hB-uY9"/>
+                <outlet property="titleLabelLeading" destination="JuX-g4-aj3" id="iLa-Zq-q5B"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_btn_go" width="22" height="22"/>
+        <image name="personal_center_phone" width="22" height="22"/>
+    </resources>
+</document>

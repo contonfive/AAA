@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="AUXTimePeriodPickerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="波峰时段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNN-mt-swO">
+                        <rect key="frame" x="20" y="15" width="65.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="9p6-ch-hcP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mi-eX-q98">
+                        <rect key="frame" x="0.0" y="33" width="160" height="166.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </pickerView>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfv-PZ-RzJ">
+                        <rect key="frame" x="160" y="33" width="160" height="166.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </pickerView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q0-rQ-Gcg">
+                        <rect key="frame" x="152" y="108.5" width="13.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Tfv-PZ-RzJ" secondAttribute="trailing" id="27e-7y-Ira"/>
+                    <constraint firstAttribute="bottom" secondItem="Tfv-PZ-RzJ" secondAttribute="bottom" id="3sK-nv-kgZ"/>
+                    <constraint firstItem="0Q0-rQ-Gcg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-8" id="7lv-ad-4CT"/>
+                    <constraint firstItem="Tfv-PZ-RzJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DUn-eY-RFz"/>
+                    <constraint firstItem="0mi-eX-q98" firstAttribute="top" secondItem="PNN-mt-swO" secondAttribute="bottom" id="Rvl-G8-cUq"/>
+                    <constraint firstItem="PNN-mt-swO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ceA-DI-BHU"/>
+                    <constraint firstItem="Tfv-PZ-RzJ" firstAttribute="top" secondItem="0mi-eX-q98" secondAttribute="top" id="g9x-26-HNS"/>
+                    <constraint firstItem="PNN-mt-swO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gy9-KQ-Wgq"/>
+                    <constraint firstAttribute="bottom" secondItem="0mi-eX-q98" secondAttribute="bottom" id="kPs-K5-Y2a"/>
+                    <constraint firstItem="0mi-eX-q98" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="o9s-bI-kes"/>
+                    <constraint firstItem="0mi-eX-q98" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pkD-XW-Uis"/>
+                    <constraint firstItem="0Q0-rQ-Gcg" firstAttribute="centerY" secondItem="0mi-eX-q98" secondAttribute="centerY" id="zKW-9q-zgM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="430" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="centerTipLabel" destination="0Q0-rQ-Gcg" id="nKO-gB-UBw"/>
+                <outlet property="centerUnitLabelLeading" destination="7lv-ad-4CT" id="Da3-X7-uhC"/>
+                <outlet property="endPickerView" destination="Tfv-PZ-RzJ" id="esg-MB-esw"/>
+                <outlet property="pickViewTop" destination="Rvl-G8-cUq" id="6nC-dP-zdh"/>
+                <outlet property="startPickViewTriling" destination="o9s-bI-kes" id="Qv2-az-N8E"/>
+                <outlet property="startPickerView" destination="0mi-eX-q98" id="gsk-Zy-1NO"/>
+                <outlet property="titleLabel" destination="PNN-mt-swO" id="70f-Xi-y8t"/>
+                <outlet property="titleLabelTop" destination="ceA-DI-BHU" id="kZU-kr-s9Z"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

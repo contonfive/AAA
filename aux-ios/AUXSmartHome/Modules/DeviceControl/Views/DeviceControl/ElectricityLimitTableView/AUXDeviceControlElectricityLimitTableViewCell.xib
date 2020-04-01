@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="AUXDeviceControlElectricityLimitTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-g3-6EB">
+                        <rect key="frame" x="47" y="27.5" width="226" height="8"/>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="CXz-ir-Fon"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suM-qS-WpN">
+                        <rect key="frame" x="47" y="27.5" width="120" height="8"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.41960784309999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="L2e-SS-6bI"/>
+                            <constraint firstAttribute="width" constant="120" id="bOl-jk-uAw"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_icon_lightning_big" highlightedImage="device_icon_lightning_small" translatesAutoresizingMaskIntoConstraints="NO" id="hN5-jc-BTh">
+                        <rect key="frame" x="21" y="21.5" width="20" height="20"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_icon_lightning_big" highlightedImage="device_icon_lightning_big" translatesAutoresizingMaskIntoConstraints="NO" id="9oc-ip-vuW">
+                        <rect key="frame" x="279" y="21.5" width="20" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu8-zs-BvB">
+                        <rect key="frame" x="144" y="0.0" width="32.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hN5-jc-BTh" firstAttribute="trailing" secondItem="h3c-g3-6EB" secondAttribute="leading" constant="-6" id="FLn-Wa-qHH"/>
+                    <constraint firstItem="Nu8-zs-BvB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="N8C-EV-G3q"/>
+                    <constraint firstItem="h3c-g3-6EB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="47" id="P3n-Tf-6kd"/>
+                    <constraint firstAttribute="trailing" secondItem="h3c-g3-6EB" secondAttribute="trailing" constant="47" id="Ucr-BA-9gd"/>
+                    <constraint firstItem="suM-qS-WpN" firstAttribute="height" secondItem="h3c-g3-6EB" secondAttribute="height" id="WoL-h1-rdF"/>
+                    <constraint firstItem="h3c-g3-6EB" firstAttribute="top" secondItem="Nu8-zs-BvB" secondAttribute="bottom" constant="8" id="Zfz-yL-2Il"/>
+                    <constraint firstItem="hN5-jc-BTh" firstAttribute="centerY" secondItem="h3c-g3-6EB" secondAttribute="centerY" id="ft1-82-rrj"/>
+                    <constraint firstItem="suM-qS-WpN" firstAttribute="leading" secondItem="h3c-g3-6EB" secondAttribute="leading" id="h34-2W-j8e"/>
+                    <constraint firstItem="Nu8-zs-BvB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hRQ-Lt-jok"/>
+                    <constraint firstItem="9oc-ip-vuW" firstAttribute="centerY" secondItem="h3c-g3-6EB" secondAttribute="centerY" id="hh4-bn-UjH"/>
+                    <constraint firstItem="suM-qS-WpN" firstAttribute="centerY" secondItem="h3c-g3-6EB" secondAttribute="centerY" id="qzd-gF-Rvj"/>
+                    <constraint firstItem="9oc-ip-vuW" firstAttribute="leading" secondItem="h3c-g3-6EB" secondAttribute="trailing" constant="6" id="zRc-rc-WyP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backContentView" destination="h3c-g3-6EB" id="JxD-t1-pkz"/>
+                <outlet property="leftImageView" destination="hN5-jc-BTh" id="c3b-9w-cyg"/>
+                <outlet property="percentageLabel" destination="Nu8-zs-BvB" id="HDi-je-plr"/>
+                <outlet property="percentageView" destination="suM-qS-WpN" id="zTi-YQ-pSZ"/>
+                <outlet property="persentageViewWidth" destination="bOl-jk-uAw" id="aLM-Gl-8ei"/>
+                <outlet property="rightImageView" destination="9oc-ip-vuW" id="zhq-rg-euw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="device_icon_lightning_big" width="20" height="20"/>
+        <image name="device_icon_lightning_small" width="20" height="20"/>
+    </resources>
+</document>

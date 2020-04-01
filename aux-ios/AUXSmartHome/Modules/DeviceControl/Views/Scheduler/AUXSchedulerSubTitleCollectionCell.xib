@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AUXSchedulerSubTitleCollectionCell" id="sCF-MZ-Wvf" customClass="AUXSchedulerSubTitleCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-rX-2DS">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="87"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="制冷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR4-6M-dRu">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma3-g1-fHs" customClass="AUXButton">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="87"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="qmui_borderColor">
+                                        <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="qmui_borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSelectedAtcion:" destination="sCF-MZ-Wvf" eventType="touchUpInside" id="nMm-84-vKr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pR4-6M-dRu" secondAttribute="trailing" id="8a1-LH-twM"/>
+                            <constraint firstItem="ma3-g1-fHs" firstAttribute="top" secondItem="rbf-rX-2DS" secondAttribute="top" id="GQE-dw-1lU"/>
+                            <constraint firstItem="ma3-g1-fHs" firstAttribute="leading" secondItem="rbf-rX-2DS" secondAttribute="leading" id="c8s-uX-A7G"/>
+                            <constraint firstItem="pR4-6M-dRu" firstAttribute="top" secondItem="rbf-rX-2DS" secondAttribute="top" id="erv-j8-q6i"/>
+                            <constraint firstAttribute="bottom" secondItem="pR4-6M-dRu" secondAttribute="bottom" id="fOJ-Q5-ILd"/>
+                            <constraint firstItem="pR4-6M-dRu" firstAttribute="leading" secondItem="rbf-rX-2DS" secondAttribute="leading" id="h7r-RG-goQ"/>
+                            <constraint firstAttribute="bottom" secondItem="ma3-g1-fHs" secondAttribute="bottom" id="ixl-dq-NwF"/>
+                            <constraint firstAttribute="trailing" secondItem="ma3-g1-fHs" secondAttribute="trailing" id="sMu-RE-Xun"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="rbf-rX-2DS" firstAttribute="top" secondItem="sCF-MZ-Wvf" secondAttribute="top" id="dmk-oP-lBu"/>
+                <constraint firstItem="rbf-rX-2DS" firstAttribute="leading" secondItem="sCF-MZ-Wvf" secondAttribute="leading" id="huR-Dg-mSR"/>
+                <constraint firstAttribute="bottom" secondItem="rbf-rX-2DS" secondAttribute="bottom" id="iHB-wG-yxk"/>
+                <constraint firstAttribute="trailing" secondItem="rbf-rX-2DS" secondAttribute="trailing" id="oKK-To-apS"/>
+            </constraints>
+            <size key="customSize" width="135" height="87"/>
+            <connections>
+                <outlet property="titleBtn" destination="ma3-g1-fHs" id="I8M-HZ-82p"/>
+                <outlet property="titleLabel" destination="pR4-6M-dRu" id="7fu-vK-hRn"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="118"/>
+        </collectionViewCell>
+    </objects>
+</document>

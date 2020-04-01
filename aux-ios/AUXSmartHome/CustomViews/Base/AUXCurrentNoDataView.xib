@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CNL-Q7-vtQ" customClass="AUXCurrentNoDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCT-vH-AJy">
+                    <rect key="frame" x="0.0" y="12" width="375" height="655"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_img_notiming" translatesAutoresizingMaskIntoConstraints="NO" id="Eud-y9-y1G">
+                            <rect key="frame" x="91" y="120" width="193" height="150"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无定时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3i-rF-yDZ">
+                            <rect key="frame" x="155" y="292" width="65.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Eud-y9-y1G" firstAttribute="top" secondItem="mCT-vH-AJy" secondAttribute="top" constant="120" id="5FC-8Z-OpP"/>
+                        <constraint firstItem="N3i-rF-yDZ" firstAttribute="top" secondItem="Eud-y9-y1G" secondAttribute="bottom" constant="22" id="Ea0-z2-TCn"/>
+                        <constraint firstItem="N3i-rF-yDZ" firstAttribute="centerX" secondItem="mCT-vH-AJy" secondAttribute="centerX" id="dmv-Pd-Xgo"/>
+                        <constraint firstItem="Eud-y9-y1G" firstAttribute="centerX" secondItem="mCT-vH-AJy" secondAttribute="centerX" id="jQZ-JO-adr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mCT-vH-AJy" secondAttribute="trailing" id="5LK-Dx-166"/>
+                <constraint firstAttribute="bottom" secondItem="mCT-vH-AJy" secondAttribute="bottom" id="MQ8-Em-pbc"/>
+                <constraint firstItem="mCT-vH-AJy" firstAttribute="top" secondItem="CNL-Q7-vtQ" secondAttribute="top" constant="12" id="ctq-Uh-TtB"/>
+                <constraint firstItem="mCT-vH-AJy" firstAttribute="leading" secondItem="CNL-Q7-vtQ" secondAttribute="leading" id="hnq-bG-pFi"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="Eud-y9-y1G" id="t46-iH-lRf"/>
+                <outlet property="titleLabel" destination="N3i-rF-yDZ" id="h7s-eh-XC1"/>
+                <outlet property="topLayoutConstraint" destination="ctq-Uh-TtB" id="T64-kd-byy"/>
+            </connections>
+            <point key="canvasLocation" x="162" y="109"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="device_img_notiming" width="193" height="150"/>
+    </resources>
+</document>

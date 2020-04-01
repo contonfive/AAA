@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="AUXNotificationComponentPromptFooterView" id="2UP-dO-Asq" customClass="AUXNotificationComponentPromptFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-Qj-uFL">
+                    <rect key="frame" x="38" y="311.5" width="299" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="uww-yY-i7r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="我知道了">
+                        <color key="titleColor" red="0.14509803921568626" green="0.41960784313725491" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="19.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7gi-Qj-uFL" firstAttribute="centerY" secondItem="2UP-dO-Asq" secondAttribute="centerY" id="KdN-Lm-d75"/>
+                <constraint firstItem="7gi-Qj-uFL" firstAttribute="centerX" secondItem="2UP-dO-Asq" secondAttribute="centerX" id="Lpu-1D-kTa"/>
+                <constraint firstAttribute="trailing" secondItem="7gi-Qj-uFL" secondAttribute="trailing" constant="38" id="Yf7-7r-5Py"/>
+                <constraint firstItem="7gi-Qj-uFL" firstAttribute="leading" secondItem="2UP-dO-Asq" secondAttribute="leading" constant="38" id="wvx-QX-Wch"/>
+            </constraints>
+            <connections>
+                <outlet property="iKnowButton" destination="7gi-Qj-uFL" id="y1R-ww-3zH"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="59"/>
+        </view>
+    </objects>
+</document>

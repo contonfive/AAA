@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7RY-Zq-r8g" customClass="AUXSceneMapSearchHistory">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索历史" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-6s-PRL">
+                    <rect key="frame" x="20" y="12" width="54" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-xc-WPs">
+                    <rect key="frame" x="314" y="12" width="41" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="imageEdgeInsets" minX="-7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="清空" image="scene_icon_delete">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clearButtonAtcion:" destination="7RY-Zq-r8g" eventType="touchUpInside" id="gwM-Rj-Hk0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="E7R-6s-PRL" firstAttribute="leading" secondItem="7RY-Zq-r8g" secondAttribute="leading" constant="20" id="6JR-d5-ENh"/>
+                <constraint firstAttribute="trailing" secondItem="TeV-xc-WPs" secondAttribute="trailing" constant="20" id="8yA-RK-Tg1"/>
+                <constraint firstItem="TeV-xc-WPs" firstAttribute="centerY" secondItem="7RY-Zq-r8g" secondAttribute="centerY" id="bp0-sc-77N"/>
+                <constraint firstItem="E7R-6s-PRL" firstAttribute="centerY" secondItem="7RY-Zq-r8g" secondAttribute="centerY" id="lTs-8j-Zmi"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="clearButton" destination="TeV-xc-WPs" id="Nmp-oQ-JNL"/>
+            </connections>
+            <point key="canvasLocation" x="6" y="90"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="scene_icon_delete" width="14" height="14"/>
+    </resources>
+</document>

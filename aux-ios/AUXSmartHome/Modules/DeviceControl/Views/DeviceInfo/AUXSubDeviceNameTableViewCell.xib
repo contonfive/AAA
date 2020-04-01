@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUXSubDeviceNameTableViewCell" id="Xxa-he-PqT" customClass="AUXSubDeviceNameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xxa-he-PqT" id="uSA-mu-26A">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBf-0S-Ptr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家用空调" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLZ-4V-rwT">
+                                <rect key="frame" x="20" y="12" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSu-QA-7HB">
+                                <rect key="frame" x="339" y="11" width="16" height="22"/>
+                                <state key="normal" image="service_address_icon_edit"/>
+                                <connections>
+                                    <action selector="editNameAtcion:" destination="Xxa-he-PqT" eventType="touchUpInside" id="ad2-rS-Cjc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VSu-QA-7HB" secondAttribute="trailing" constant="20" id="4ep-V0-GAy"/>
+                            <constraint firstItem="nLZ-4V-rwT" firstAttribute="leading" secondItem="cBf-0S-Ptr" secondAttribute="leading" constant="20" id="60u-CQ-cgD"/>
+                            <constraint firstItem="nLZ-4V-rwT" firstAttribute="centerY" secondItem="cBf-0S-Ptr" secondAttribute="centerY" id="SMT-1O-KSP"/>
+                            <constraint firstItem="VSu-QA-7HB" firstAttribute="centerY" secondItem="cBf-0S-Ptr" secondAttribute="centerY" id="jXi-KU-3wx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cBf-0S-Ptr" firstAttribute="top" secondItem="uSA-mu-26A" secondAttribute="top" id="CQT-N1-YaJ"/>
+                    <constraint firstAttribute="bottom" secondItem="cBf-0S-Ptr" secondAttribute="bottom" id="QMq-yy-rxy"/>
+                    <constraint firstItem="cBf-0S-Ptr" firstAttribute="leading" secondItem="uSA-mu-26A" secondAttribute="leading" id="cfW-f9-I8Q"/>
+                    <constraint firstAttribute="trailing" secondItem="cBf-0S-Ptr" secondAttribute="trailing" id="xg5-2Z-TbS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editNameBtn" destination="VSu-QA-7HB" id="82N-Tj-aaL"/>
+                <outlet property="titleLabel" destination="nLZ-4V-rwT" id="3lC-3l-t1c"/>
+            </connections>
+            <point key="canvasLocation" x="-97" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="service_address_icon_edit" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="AUXAddressAlertTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzc-3s-nRu">
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="83.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杭州市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L90-g3-WUl">
+                                <rect key="frame" x="20" y="32" width="49" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umY-2p-HXl">
+                                <rect key="frame" x="308" y="34" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Y8Y-hB-sLw"/>
+                                    <constraint firstAttribute="width" constant="16" id="uhe-db-xm3"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbs-eq-z9Q">
+                                <rect key="frame" x="20" y="81.5" width="350" height="1"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="WV6-5a-oow"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="umY-2p-HXl" firstAttribute="centerY" secondItem="bzc-3s-nRu" secondAttribute="centerY" id="2aB-XZ-DDa"/>
+                            <constraint firstItem="umY-2p-HXl" firstAttribute="leading" secondItem="lbs-eq-z9Q" secondAttribute="trailing" constant="-62" id="7re-sS-PiD"/>
+                            <constraint firstItem="lbs-eq-z9Q" firstAttribute="leading" secondItem="bzc-3s-nRu" secondAttribute="leading" constant="20" id="B7V-6H-tnQ"/>
+                            <constraint firstAttribute="bottom" secondItem="lbs-eq-z9Q" secondAttribute="bottom" constant="1" id="E5n-P9-KQf"/>
+                            <constraint firstItem="L90-g3-WUl" firstAttribute="centerY" secondItem="bzc-3s-nRu" secondAttribute="centerY" id="Rpb-Ls-MDB"/>
+                            <constraint firstAttribute="trailing" secondItem="umY-2p-HXl" secondAttribute="trailing" constant="20" id="fB0-JB-BJE"/>
+                            <constraint firstItem="L90-g3-WUl" firstAttribute="leading" secondItem="bzc-3s-nRu" secondAttribute="leading" constant="20" id="pyH-iR-zD4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bzc-3s-nRu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="15Q-E1-K6h"/>
+                    <constraint firstAttribute="bottom" secondItem="bzc-3s-nRu" secondAttribute="bottom" id="42M-2T-UWC"/>
+                    <constraint firstItem="bzc-3s-nRu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JIp-aI-KCK"/>
+                    <constraint firstAttribute="trailing" secondItem="bzc-3s-nRu" secondAttribute="trailing" id="PcN-Qc-BsN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="L90-g3-WUl" id="hL4-L2-tae"/>
+                <outlet property="selectImage" destination="umY-2p-HXl" id="n2t-3h-gaN"/>
+            </connections>
+            <point key="canvasLocation" x="148.80000000000001" y="90.854572713643179"/>
+        </tableViewCell>
+    </objects>
+</document>
